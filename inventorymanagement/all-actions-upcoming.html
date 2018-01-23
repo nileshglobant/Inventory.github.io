@@ -1,0 +1,299 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>EXL</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+  </head>
+<body>
+  <!-- Header Portion Start -->
+  <header>
+    <div class="container-fluid margin-left-none">
+      <div class="row clearfix">
+        <div class="logo"><img src="assets/img/exl-logo.png" alt="Logo"></div>
+        <div class="inventory-logo col-sm-2"><img src="assets/img/inventory-management.png"></div>
+        <div class="col-xs-12 col-sm-8 pull-right">
+          <h5 class="title visible-xs ordertitle">ORDERS</h5>
+          <div class="userdtl-dropdown clearfix">
+              <div class="user-dtls clearfix">
+                <span class="fa fa-user-circle-o header-usericon visible-xs" aria-hidden="true"></span>
+                <div class="pull-left hidden-xs">
+                  <h6 class="username">Mary Smith</h6>
+                  <span class="user-location">Colombian Ins Grp</span>
+                </div>
+                <i class="drop-arrow fa fa-angle-down hidden-xs" aria-hidden="true"></i>
+              </div>
+              <ul class="dropdowns">
+                <li><a href="#">Dropdown 1</a></li>
+                <li><a href="#">Dropdown 2</a></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+          </div>
+          <div class="notifi-messge-icons">
+            <!-- Search Icon for Mobile View Start -->
+            <div class="icons-group visible-xs">
+              <a href="#" class="link"><i class="icon-exl-search-document icons search"></i></a>
+            </div>
+            <div class="icons-group">
+              <a href="#" class="link"><i class="icon-exl-system-flags icons flag"></i></a>
+              <span class="notification-alert">2</span>
+              <!-- Reminder Message Dropdown Start -->
+              <div class="message-dropdown" style="display:none">
+                <span class="arrow-up"></span>
+                <div class="mesg-head clearfix">
+                  <h4 class="col-sm-12 col-md-12 title">System Flags</h4>
+                </div>
+                <div class="mesg-middle">
+                  <ul class="reminder-list">
+                    <li class="clearfix">
+                      <div class="col-sm-11 col-md-11">
+                        <p class="woid-number"><a href="#">WOID 1144332</a></p>
+                        <p class="reminder-descrip">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum printing and typesetting industry. Lorem Ipsum.</p>
+                        <span class="reminder-date">10:27 am</span>
+                      </div>
+                      <div class="col-sm-1 col-md-1 flags-circle"><p class="red"></p></div>
+                    </li>
+                    <li class="clearfix active">
+                      <div class="col-sm-11 col-md-11">
+                        <p class="woid-number"><a href="#">WOID 1144332</a></p>
+                        <p class="reminder-descrip">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum printing and typesetting industry. Lorem Ipsum.</p>
+                        <span class="reminder-date">10:27 am</span>
+                      </div>
+                      <div class="col-sm-1 col-md-1 flags-circle"><p class="red"></p></div>
+                    </li>
+                    <li class="clearfix">
+                      <div class="col-sm-11 col-md-11">
+                        <p class="woid-number"><a href="#">WOID 1144332</a></p>
+                        <p class="reminder-descrip">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum printing and typesetting industry. Lorem Ipsum.</p>
+                        <span class="reminder-date">10:27 am</span>
+                      </div>
+                      <div class="col-sm-1 col-md-1 flags-circle"><p class="green"></p></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="icons-group">
+              <a href="#" class="link"><i class="icon-exl-reminders icons"></i></a>
+              <span class="notification-alert">7</span>
+              <!-- Reminder Message Dropdown Start -->
+              <div class="message-dropdown" style="display:none;">
+                <span class="arrow-up"></span>
+                <div class="mesg-head clearfix">
+                  <h4 class="col-sm-6 col-md-6 title">Reminders</h4>
+                  <span class="col-sm-6 col-md-6 link-read">
+                    <a href="#">View All</a>
+                    <a href="#">Mark all as Read</a>
+                  </span>
+                </div>
+                <div class="mesg-middle">
+                  <ul class="reminder-list">
+                    <h5 class="todayspast-grey">Past Reminder</h5>
+                    <li class="clearfix">
+                      <div class="col-sm-11 col-md-11">
+                        <p class="woid-number"><a href="#">WOID 1144332</a></p>
+                        <p class="from-self">From: Self</p>
+                        <p class="reminder-descrip">Reminder for Appointment Letter. Please send confirmation letter for WOID 1533234 - insured said though last minute they can</p>
+                        <span class="reminder-date">9/18/17, 9AM EDT</span>
+                      </div>
+                      <span class="col-sm-1 col-md-1 reminder-arrow"><i class="fa fa-check-circle-o" aria-hidden="true"></i></span>
+                    </li>
+                    <h5 class="todayspast-grey">Today&apos;s Reminders</h5>
+                    <li class="clearfix">
+                      <div class="col-sm-11 col-md-11">
+                        <p class="woid-number"><a href="#">WOID 1144332</a></p>
+                        <p class="from-self">From: Self</p>
+                        <p class="reminder-descrip">Dr. Appointment 10/2 9AM -3PM EDT</p>
+                        <span class="reminder-date">10/2/17, 9AM EDT</span>
+                      </div>
+                      <span class="col-sm-1 col-md-1 reminder-arrow"><i class="fa fa-check-circle-o" aria-hidden="true"></i></span>
+                    </li>
+                    <li class="clearfix">
+                      <div class="col-sm-11 col-md-11">
+                        <p class="woid-number"><a href="#">WOID 1332200</a></p>
+                        <p class="from-self">From: Scheduler Smith </p>
+                        <p class="reminder-descrip">Follow up with Agent on WOID 1332200 – Agent said to call back tomorrow.</p>
+                        <span class="reminder-date">9/19/17, 9AM EDT</span>
+                      </div>
+                      <span class="col-sm-1 col-md-1 reminder-arrow"><i class="fa fa-check-circle-o" aria-hidden="true"></i></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mesg-footer"><a href="#">+ Create a Reminder</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Left Panel Start -->
+  <div class="leftpanel">
+    <nav class="navigation clearfix " >
+      <ul>
+        <li class="active"><a href="#"><i class="icon-exl-order nav-icons"></i><span class="hidden-xs">Orders</span></a></li>
+        <li><a href="#"><i class="icon-exl-agenda nav-icons agenda"></i><span class="hidden-xs">Agenda</span></a></li>
+        <li class="hidden-xs"><a href="#"><i class="icon-exl-reports nav-icons report icon-left"></i>Reports</span></a></li>
+      </ul>
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse nav-collapse-view clearfix navmobile" id="bs-example-navbar-collapse-1">
+        <ul class="clearfix">
+          <li><a href="#"><i class="icon-exl-reports nav-icons report icon-left"></i>Reports</span></a></li>
+          <li><a href="#"><i class="icon-exl-reports nav-icons report icon-left"></i>Other 1</span></a></li>
+          <li><a href="#"><i class="icon-exl-reports nav-icons report icon-left"></i>Other 2</span></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Main Container Start -->
+  <div class="main-container">
+    <!-- Middle Portion Start -->
+    <div class="container-fluid middle-portion">
+      <div class="page-title-blue title-margintop row">
+        <h3 class="title col-sm-10 col-md-10 hidden-xs">ALL Actions</h3>
+        <div class="col-sm-2 col-md-2">
+          <a href="#" class="head-closeicon"><i class="icon-exl-close"></i></a>
+        </div>
+      </div>
+      <div class="showcompleted-section row clearfix">
+        <div class="col-sm-4 col-md-4">
+          <label class="check-wrap margin-top">
+            <input type="checkbox" name="" checked>
+            <span class="check-label showcomplete-action">Show completed actions</span>
+          </label>
+        </div>
+        <div class="col-sm-8 col-md-8">
+          <div class="search-wrap">
+            <input type="text" placeholder="Search" class="search-action">
+            <a href="#" class="iconsearch"><i class="icon-exl-search-document"></i></a>
+          </div>
+          <div class="myaction-assign clearfix">
+            <span class="myassign-text">My Actions</span>
+            <div class="onoffswitch togglebtn">
+                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch1">
+                <label class="onoffswitch-label" for="myonoffswitch1">
+                    <span class="onoffswitch-inner"></span><span class="onoffswitch-switch"></span>
+                </label>
+            </div>
+            <span class="myassign-text">Assigned</span>
+          </div>
+        </div>
+      </div>
+      <div class="subtabs-bg row clearfix">
+        <div class="col-xs-12 col-sm-6 col-md-4 action-links bigsize pull-right">
+          <a href="#"><i class="icon-exl-add action-icon"></i>Create New Action</a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-8 pull-right">
+          <ul class="nav nav-tabs order-subtabs bigtab">
+            <li><a href="all-actions.html">Past Due</a></li>
+            <li class="active"><a href="all-actions-upcoming.html">Upcoming</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="clearfix margin-top-40">
+        <!-- <div class="table-bluehead">Filter Applied : Default Status Filter</div> -->
+        <div class="grid-table allactions-table">
+          <ul>
+            <li class="grid-title clearfix">
+              <span class="col col-7">&nbsp;</span>
+              <span class="col col-12">WOID</span>
+              <span class="col col-18">FROM</span>
+              <span class="col col-37">NOTES</span>
+              <span class="col col-14">DATE &amp; TIME <a href="#" class="sorticon"><i class="fa fa-sort" aria-hidden="true"></i></a></span>
+              <span class="col">&nbsp;</span>
+            </li>
+            <li class="clearfix">
+              <span class="col col-7 tooltip-grid">
+                <a href="#" class="iconmarked"><i class="icon-exl-tick-circle"></i></a>
+                <span class="tooltip-text">Mark as Done</span>
+              </span>
+              <span class="col col-12 woidid">--</span>
+              <span class="col col-18">Self</span>
+              <span class="col col-37"> Appointment at Kaiser Permanent on 9/7/2017 at 2-3 pm</span>
+              <span class="col col-14">10/27/17, 9AM EDT</span>
+              <span class="col">
+                <a href="edit-actions.html" class="icon-edit marginleft"><i class="icon-exl-edit"></i></a>
+                <a href="#" class="icon-delete delete"><i class="icon-exl-delete"></i></a>
+              </span>
+            </li>
+            <li class="clearfix read">
+              <span class="col col-7 tooltip-grid">
+                <a href="#" class="iconmarked"><i class="icon-exl-tick-circle"></i></a>
+                <span class="tooltip-text">Mark as Done</span>
+              </span>
+              <span class="col col-12 woidid">8417827</span>
+              <span class="col col-18">Self</span>
+              <span class="col col-37">Appointment with Olaf’s Ice International</span>
+              <span class="col col-14">10/27/17, 11AM EDT</span>
+              <span class="col">
+                <a href="edit-actions.html" class="icon-edit marginleft"><i class="icon-exl-edit"></i></a>
+                <a href="#" class="icon-delete delete"><i class="icon-exl-delete"></i></a>
+              </span>
+            </li>
+            <li class="clearfix">
+              <span class="col col-7 tooltip-grid">
+                <a href="#" class="iconmarked"><i class="icon-exl-tick-circle"></i></a>
+                <span class="tooltip-text">Mark as Done</span>
+              </span>
+              <span class="col col-12 woidid">1053330</span>
+              <span class="col col-18">Martin Smith</span>
+              <span class="col col-37">Please send confirmation letter for WOID 1053330  - insured said though last minute, they can meet for short duration near Townhall Building</span>
+              <span class="col col-14">10/28/17, 1PM EDT</span>
+              <span class="col">
+                <!-- <a href="edit-actions.html" class="icon-edit marginleft"><i class="icon-exl-edit"></i></a> -->
+                <a href="#" class="icon-delete delete"><i class="icon-exl-delete"></i></a>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Portion Start -->
+    <footer>
+      <div class="container-fluid margin-left-none">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 col-md-4 copy-right">&copy; 2017 EXL. All rights reserved.</div>
+          <div class="col-xs-12 col-sm-8 col-md-8 ftr-link">
+            <a href="#">Legal Disclaimer</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="bootstrap/js/npm.js"></script>
+  <script src="assets/js/classie.js"></script>
+  <script src="assets/js/selectFx.js"></script>
+  <script>
+    (function() {
+      [].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {
+        new SelectFx(el);
+      } );
+    })();
+  </script>
+
+</body>
+</html>

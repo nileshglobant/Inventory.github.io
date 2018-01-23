@@ -1,0 +1,525 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>EXL</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+  </head>
+<body>
+  <!-- Header Portion Start -->
+  <header>
+    <div class="container-fluid margin-left-none">
+      <div class="row clearfix">
+        <div class="logo"><img src="assets/img/exl-logo.png" alt="Logo"></div>
+        <div class="inventory-logo col-sm-2"><img src="assets/img/inventory-management.png"></div>
+        <div class="col-xs-12 col-sm-8 pull-right">
+          <h5 class="title visible-xs ordertitle">ORDERS</h5>
+          <div class="userdtl-dropdown clearfix">
+              <div class="user-dtls clearfix">
+                <span class="fa fa-user-circle-o header-usericon visible-xs" aria-hidden="true"></span>
+                <div class="pull-left hidden-xs">
+                  <h6 class="username">Mary Smith</h6>
+                  <span class="user-location">Colombian Ins Grp</span>
+                </div>
+                <i class="drop-arrow fa fa-angle-down hidden-xs" aria-hidden="true"></i>
+              </div>
+              <ul class="dropdowns">
+                <li><a href="#">Dropdown 1</a></li>
+                <li><a href="#">Dropdown 2</a></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+          </div>
+          <div class="notifi-messge-icons">
+            <!-- Search Icon for Mobile View Start -->
+            <div class="icons-group visible-xs">
+              <a href="#" class="link"><i class="icon-exl-search-document icons search"></i></a>
+            </div>
+            <div class="icons-group">
+              <a href="#" class="link"><i class="icon-exl-system-flags icons flag"></i></a>
+              <span class="notification-alert">2</span>
+            </div>
+            <div class="icons-group">
+              <a href="#" class="link"><i class="icon-exl-reminders icons"></i></a>
+              <span class="notification-alert orange">5</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Reminder Message Dropdown Start -->
+  <div class="actions-dropdown">
+    <span class="arrow-up"></span>
+    <div class="action-head clearfix">
+      <h4 class="col-sm-6 col-md-6 title">Actions</h4>
+      <span class="col-sm-6 col-md-6 view-all">
+        <a href="#">View All</a>
+      </span>
+    </div>
+    <div class="actions-middle">
+      <div class="todayspast-grey clearfix">
+        <h5 class="title">Past Due<span class="action-notification">0</span></h5>
+        <a href="#" class="downarrow"><i class="icon-exl-arrow-down"></i></a>
+      </div>
+      <ul class="actions-list">
+        <li class="clearfix">
+          <div class="nine-list">None</div>
+        </li>
+      </ul>
+      <div class="todayspast-grey clearfix">
+        <h5 class="title">Upcoming<span class="dividerline">Today</span><span class="action-notification orange">5</span></h5>
+      </div>
+      <ul class="actions-list action-todays-scroll leftpadd">
+        <li class="clearfix">
+          <div class="col-xs-11 col-sm-11 col-md-11 leftpadd">
+            <p class="woid-number"><a href="#">WOID 4649986</a></p>
+            <p class="from-self">From: Martin Smith</p>
+            <p class="actions-descrip">Agent has sent the source documents, please check and update.</p>
+            <span class="actions-date">Today, 11:23 AM CST</span>
+          </div>
+          <span class="col-xs-1 col-sm-1 col-md-1 actions-arrow"><i class="icon-exl-tick-circle"></i></span>
+        </li>
+        <li class="clearfix">
+          <div class="col-xs-11 col-sm-11 col-md-11 leftpadd">
+            <p class="from-self">From: Self</p>
+            <p class="actions-descrip">Appointment at Kaiser Permanente on 9/7/17 2-3pm.</p>
+            <p class="location">Location: 22 Burk Street, Wesley Drive, Chicago</p>
+            <span class="actions-date">Today, 5:00 PM CST</span>
+          </div>
+          <span class="col-xs-1 col-sm-1 col-md-1 actions-arrow"><i class="icon-exl-tick-circle"></i></span>
+        </li>
+        <li class="clearfix">
+          <div class="col-xs-11 col-sm-11 col-md-11 leftpadd">
+            <p class="from-self">From: Self</p>
+            <p class="actions-descrip">Appointment at Kaiser Permanente on 9/7/17 2-3pm.</p>
+            <p class="location">Location: 22 Burk Street, Wesley Drive, Chicago</p>
+            <span class="actions-date">Today, 5:00 PM CST</span>
+          </div>
+          <span class="col-xs-1 col-sm-1 col-md-1 actions-arrow"><i class="icon-exl-tick-circle"></i></span>
+        </li>
+        <li class="clearfix">
+          <div class="col-xs-11 col-sm-11 col-md-11 leftpadd">
+            <p class="from-self">From: Self</p>
+            <p class="actions-descrip">Appointment at Kaiser Permanente on 9/7/17 2-3pm.</p>
+            <p class="location">Location: 22 Burk Street, Wesley Drive, Chicago</p>
+            <span class="actions-date">Today, 5:00 PM CST</span>
+          </div>
+          <span class="col-xs-1 col-sm-1 col-md-1 actions-arrow"><i class="icon-exl-tick-circle"></i></span>
+        </li>
+        <li class="clearfix">
+          <div class="col-xs-11 col-sm-11 col-md-11 leftpadd">
+            <p class="from-self">From: Self</p>
+            <p class="actions-descrip">Appointment at Kaiser Permanente on 9/7/17 2-3pm.</p>
+            <p class="location">Location: 22 Burk Street, Wesley Drive, Chicago</p>
+            <span class="actions-date">Today, 5:00 PM CST</span>
+          </div>
+          <span class="col-xs-1 col-sm-1 col-md-1 actions-arrow"><i class="icon-exl-tick-circle"></i></span>
+        </li>
+      </ul>
+    </div>
+    <div class="mesg-footer clearfix"><a href="new-actions.html"><i class="icon-exl-add iconplus"></i><span class="pull-left">Create New Action</span></a></div>
+  </div>
+
+  <!-- Left Panel Start -->
+  <div class="leftpanel">
+    <nav class="navigation clearfix " >
+      <ul>
+        <li class="active"><a href="#"><i class="icon-exl-order nav-icons"></i><span class="hidden-xs">Orders</span></a></li>
+        <li><a href="#"><i class="icon-exl-agenda nav-icons agenda"></i><span class="hidden-xs">Agenda</span></a></li>
+        <li class="hidden-xs"><a href="#"><i class="icon-exl-reports nav-icons report icon-left"></i>Reports</span></a></li>
+      </ul>
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse nav-collapse-view clearfix navmobile" id="bs-example-navbar-collapse-1">
+        <ul class="clearfix">
+          <li><a href="#"><i class="icon-exl-reports nav-icons report icon-left"></i>Reports</span></a></li>
+          <li><a href="#"><i class="icon-exl-reports nav-icons report icon-left"></i>Other 1</span></a></li>
+          <li><a href="#"><i class="icon-exl-reports nav-icons report icon-left"></i>Other 2</span></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Main Container Start -->
+  <div class="main-container">
+    <!-- Middle Portion Start -->
+    <div class="container-fluid middle-portion">
+      <div class="row marginbtm clearfix hidden-xs">
+          <!-- Top Bread Crumb Section -->
+          <div class="col-sm-12 col-md-5">
+            <ul class="breadcrumb">
+              <li class="active">Orders</li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-7 breadcrumb-rtportion">
+            <span class="search-input clearfix">
+              <input type="text" class="inputbox" value="Search">
+              <a href="#" class="iconsearch"><i class="fa fa-search" aria-hidden="true"></i></a>
+            </span>
+            <span class="selectbox insure-select-form">
+              <select class="cs-select cs-skin-border">
+                <option>Insured Name</option>
+                <option value="">Select 1</option>
+                <option value="">Select 2</option>
+                <option value="">Select 3</option>
+              </select>
+            </span>
+          </div>
+      </div>
+      <div class="page-title-blue row">
+        <h3 class="title col-sm-6 col-md-6 hidden-xs">ORDERS</h3>
+        <div class="col-sm-6 col-md-6 clearfix">
+          <div class="onoffswitch pull-right">
+              <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch1">
+              <label class="onoffswitch-label" for="myonoffswitch1">
+                  <span class="onoffswitch-inner"></span><span class="onoffswitch-switch"></span>
+              </label>
+          </div>
+          <span class="schedule-appoint-label">Schedule Appointments</span>
+        </div>
+      </div>
+      <div class="row filter-greybox">
+        <div class="col-sm-12 col-md-12 clearfix">
+          <div class="col-sm-1 col-md-1 filter-title hidden-xs">Filters</div>
+          <div class="col-xs-10 col-sm-5 col-md-5 filter-select-form">
+            <span class="selectbox insure-select-form">
+              <select class="cs-select cs-skin-border">
+                <option>Default Status Filter</option>
+                <option value="">Select 1</option>
+                <option value="">Select 2</option>
+                <option value="">Select 3</option>
+              </select>
+            </span>
+          </div>
+          <div class="col-sm-1 col-md-1 filter-collaps">
+            <a href="orders-expand-and-grid-on-states.html">
+              <i class="icon-exl-collapsed collaps-icon"></i>
+              <!-- <i class="icon-exl-expanded collaps-icon"></i> -->
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 filter-mid-blue">
+          <!-- Filter Collapsible View Code -->
+          <div class="filter-descrip">
+            <p class="descrip">The selected filter comprises of the following:</p>
+            <p class="descrip">Status: Scheduled, Assigned, Confirmed, Appointment, Review, Completed, Closed Out, Others</p>
+            <p class="descrip">Tenure: 17 Days to Due Date</p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 clearfix">
+          <button type="button" class="btn btn-primary apply-filter" disabled>Apply Filter</button>
+        </div>
+      </div>
+
+      <div class="clearfix">
+        <div class="sortby-section clearfix">
+          <span class="selectbox soft-select-form">
+            <select class="cs-select cs-skin-border">
+              <option>WOID</option>
+              <option value="">8582459</option>
+              <option value="">8582459</option>
+              <option value="">8582459</option>
+            </select>
+          </span>
+          <div class="sortby">Sort By</div>
+        </div>
+        <div class="table-bluehead">Filter Applied : Default Status Filter</div>
+        <div class="grid-table order-grid-scroll">
+          <ul>
+            <li class="grid-title clearfix">
+              <span class="col col-7">WOID</span>
+              <span class="col col-14">Biz Unit Name</span>
+              <span class="col col-6">Age <br>(Days)</span>
+              <span class="col">INSURED NAME</span>
+              <span class="col">Status</span>
+              <span class="col">PRODUCT LINE</span>
+              <span class="col col-13">Address</span>
+              <span class="col col-13">DATES / <br>EMPLOYEE</span>
+              <span class="col col-10">Svc Code / <br>WO Type</span>
+            </li>
+            <li class="clearfix">
+              <span class="col col-7"><a href="#">8582459</a></span>
+              <span class="col col-14">Hartford Ins. Group</span>
+              <span class="col col-6">10</span>
+              <span class="col">ROZZZZP</span>
+              <span class="col"><a href="#" class="icon-edit"><i class="icon-exl-edit"></i></a>Scheduled</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-13">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-10">Normal</span>
+            </li>
+            <li class="clearfix select-row">
+              <span class="col col-7"><a href="#">8417827</a></span>
+              <span class="col col-14">Atlantic Casualty Insurance</span>
+              <span class="col col-6">52</span>
+              <span class="col">Absolute</span>
+              <span class="col"><a href="#" class="icon-edit"><i class="icon-exl-edit"></i></a>Assigned</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-13">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-10">Normal</span>
+            </li>
+            <li class="clearfix">
+              <span class="col col-7"><a href="#">1053330</a></span>
+              <span class="col col-14">ACME Insurance</span>
+              <span class="col col-6">15</span>
+              <span class="col">SJS Truck</span>
+              <span class="col"><input type="text" class="form-control input-edit" value="Review"></span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-13">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-10">Normal</span>
+            </li>
+            <li class="clearfix">
+              <span class="col col-7"><a href="#">1057404</a></span>
+              <span class="col col-14">Western National</span>
+              <span class="col col-6">10</span>
+              <span class="col">Pine Mount</span>
+              <span class="col"><a href="#" class="icon-edit"><i class="icon-exl-edit"></i></a>Completed</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-13">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-10">Normal</span>
+            </li>
+            <li class="clearfix">
+              <span class="col col-7"><a href="#">1189495</a></span>
+              <span class="col col-14">Midwestern</span>
+              <span class="col col-6">65</span>
+              <span class="col">Olaf’s Centre</span>
+              <span class="col"><a href="#" class="icon-edit"><i class="icon-exl-edit"></i></a>Closed Out</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-13">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-10">Normal</span>
+            </li>
+            <li class="clearfix">
+              <span class="col col-7"><a href="#">8582459</a></span>
+              <span class="col col-14">Hartford Ins. Group</span>
+              <span class="col col-6">10</span>
+              <span class="col">ROZZZZP</span>
+              <span class="col"><a href="#" class="icon-edit"><i class="icon-exl-edit"></i></a>Scheduled</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-13">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-10">Normal</span>
+            </li>
+            <li class="clearfix">
+              <span class="col col-7"><a href="#">8417827</a></span>
+              <span class="col col-14">Atlantic Casualty Insurance</span>
+              <span class="col col-6">52</span>
+              <span class="col">Absolute</span>
+              <span class="col"><a href="#" class="icon-edit"><i class="icon-exl-edit"></i></a>Assigned</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-13">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-10">Normal</span>
+            </li>
+            <li class="clearfix">
+              <span class="col col-7"><a href="#">1053330</a></span>
+              <span class="col col-14">ACME Insurance</span>
+              <span class="col col-6">15</span>
+              <span class="col">SJS Truck</span>
+              <span class="col"><a href="#" class="icon-edit"><i class="icon-exl-edit"></i></a>Review</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-13">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-10">Normal</span>
+            </li>
+            <li class="clearfix">
+              <span class="col col-7"><a href="#">1057404</a></span>
+              <span class="col col-14">Western National</span>
+              <span class="col col-6">10</span>
+              <span class="col">Pine Mount</span>
+              <span class="col"><a href="#" class="icon-edit"><i class="icon-exl-edit"></i></a>Completed</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-13">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-10">Normal</span>
+            </li>
+            <li class="clearfix">
+              <span class="col col-7"><a href="#">1189495</a></span>
+              <span class="col col-14">Midwestern</span>
+              <span class="col col-6">65</span>
+              <span class="col">Olaf’s Centre</span>
+              <span class="col"><a href="#" class="icon-edit"><i class="icon-exl-edit"></i></a>Closed Out</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-13">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-10">Normal</span>
+            </li>
+            <li class="clearfix">
+              <span class="col col-7"><a href="#">8582459</a></span>
+              <span class="col col-14">Hartford Ins. Group</span>
+              <span class="col col-6">10</span>
+              <span class="col">ROZZZZP</span>
+              <span class="col"><a href="#" class="icon-edit"><i class="icon-exl-edit"></i></a>Scheduled</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-13">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-10">Normal</span>
+            </li>
+            <li class="clearfix">
+              <span class="col col-7"><a href="#">8417827</a></span>
+              <span class="col col-14">Atlantic Casualty Insurance</span>
+              <span class="col col-6">52</span>
+              <span class="col">Absolute</span>
+              <span class="col"><a href="#" class="icon-edit"><i class="icon-exl-edit"></i></a>Assigned</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-13">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-10">Normal</span>
+            </li>
+            <li class="clearfix">
+              <span class="col col-7"><a href="#">1053330</a></span>
+              <span class="col col-14">ACME Insurance</span>
+              <span class="col col-6">15</span>
+              <span class="col">SJS Truck</span>
+              <span class="col"><a href="#" class="icon-edit"><i class="icon-exl-edit"></i></a>Review</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-13">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-10">Normal</span>
+            </li>
+            <li class="clearfix">
+              <span class="col col-7"><a href="#">1057404</a></span>
+              <span class="col col-14">Western National</span>
+              <span class="col col-6">10</span>
+              <span class="col">Pine Mount</span>
+              <span class="col"><a href="#" class="icon-edit"><i class="icon-exl-edit"></i></a>Completed</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-13">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-10">Normal</span>
+            </li>
+            <li class="clearfix">
+              <span class="col col-7"><a href="#">1189495</a></span>
+              <span class="col col-14">Midwestern</span>
+              <span class="col col-6">65</span>
+              <span class="col">Olaf’s Centre</span>
+              <span class="col"><a href="#" class="icon-edit"><i class="icon-exl-edit"></i></a>Closed Out</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-13">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-10">Normal</span>
+            </li>
+            <li class="clearfix">
+              <span class="col col-7"><a href="#">8582459</a></span>
+              <span class="col col-14">Hartford Ins. Group</span>
+              <span class="col col-6">10</span>
+              <span class="col">ROZZZZP</span>
+              <span class="col"><a href="#" class="icon-edit"><i class="icon-exl-edit"></i></a>Scheduled</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-13">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-10">Normal</span>
+            </li>
+            <li class="clearfix">
+              <span class="col col-7"><a href="#">8417827</a></span>
+              <span class="col col-14">Atlantic Casualty Insurance</span>
+              <span class="col col-6">52</span>
+              <span class="col">Absolute</span>
+              <span class="col"><a href="#" class="icon-edit"><i class="icon-exl-edit"></i></a>Assigned</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-13">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-10">Normal</span>
+            </li>
+            <li class="clearfix">
+              <span class="col col-7"><a href="#">1053330</a></span>
+              <span class="col col-14">ACME Insurance</span>
+              <span class="col col-6">15</span>
+              <span class="col">SJS Truck</span>
+              <span class="col"><a href="#" class="icon-edit"><i class="icon-exl-edit"></i></a>Review</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-13">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-10">Normal</span>
+            </li>
+            <li class="clearfix">
+              <span class="col col-7"><a href="#">1057404</a></span>
+              <span class="col col-14">Western National</span>
+              <span class="col col-6">10</span>
+              <span class="col">Pine Mount</span>
+              <span class="col"><a href="#" class="icon-edit"><i class="icon-exl-edit"></i></a>Completed</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-13">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-10">Normal</span>
+            </li>
+            <li class="clearfix">
+              <span class="col col-7"><a href="#">1189495</a></span>
+              <span class="col col-14">Midwestern</span>
+              <span class="col col-6">65</span>
+              <span class="col">Olaf’s Centre</span>
+              <span class="col"><a href="#" class="icon-edit"><i class="icon-exl-edit"></i></a>Closed Out</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-13">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-10">Normal</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="clearfix">
+        <ul class="pagination pull-right">
+          <li><a href="#"><i class="icon-exl-previous-to-first pagination-arrow"></i></a></li>
+          <li>
+            <a href="#" aria-label="Previous" class="previous">
+              <i class="icon-exl-previous pagination-arrow"></i>Previous
+            </a>
+          </li>
+          <li class="mid-numbers">1-20 of 100</li>
+          <li>
+            <a href="#" aria-label="Next" class="next">
+              Next<i class="icon-exl-next pagination-arrow pull-right"></i>
+            </a>
+          </li>
+          <li><a href="#"><i class="icon-exl-next-to-end pagination-arrow"></i></a></li>
+        </ul>
+        </div>
+    </div>
+
+    <!-- Footer Portion Start -->
+    <footer>
+      <div class="container-fluid margin-left-none">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 col-md-4 copy-right">&copy; 2017 EXL. All rights reserved.</div>
+          <div class="col-xs-12 col-sm-8 col-md-8 ftr-link">
+            <a href="#">Legal Disclaimer</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="bootstrap/js/npm.js"></script>
+  <script src="assets/js/classie.js"></script>
+  <script src="assets/js/selectFx.js"></script>
+  <script>
+    (function() {
+      [].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {
+        new SelectFx(el);
+      } );
+    })();
+  </script>
+
+</body>
+</html>

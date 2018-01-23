@@ -1,0 +1,527 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>EXL</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+  </head>
+<body>
+  <!-- Header Portion Start -->
+  <header>
+    <div class="container-fluid margin-left-none">
+      <div class="row clearfix">
+        <div class="logo"><img src="assets/img/exl-logo.png" alt="Logo"></div>
+        <div class="inventory-logo col-sm-2"><img src="assets/img/inventory-management.png"></div>
+        <div class="col-xs-12 col-sm-8 pull-right">
+          <h5 class="title visible-xs ordertitle">ORDERS</h5>
+          <div class="userdtl-dropdown clearfix">
+              <div class="user-dtls clearfix">
+                <span class="fa fa-user-circle-o header-usericon visible-xs" aria-hidden="true"></span>
+                <div class="pull-left hidden-xs">
+                  <h6 class="username">Mary Smith</h6>
+                  <span class="user-location">Colombian Ins Grp</span>
+                </div>
+                <i class="drop-arrow fa fa-angle-down hidden-xs" aria-hidden="true"></i>
+              </div>
+              <ul class="dropdowns">
+                <li><a href="#">Dropdown 1</a></li>
+                <li><a href="#">Dropdown 2</a></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+          </div>
+          <div class="notifi-messge-icons">
+            <!-- Search Icon for Mobile View Start -->
+            <div class="icons-group visible-xs">
+              <a href="#" class="link"><i class="icon-exl-search-document icons search"></i></a>
+            </div>
+
+            <div class="icons-group">
+              <a href="#" class="link"><i class="icon-exl-system-flags icons flag"></i></a>
+              <span class="notification-alert">2</span>
+              <!-- Reminder Message Dropdown Start -->
+              <div class="message-dropdown" style="display:none">
+                <span class="arrow-up"></span>
+                <div class="mesg-head clearfix">
+                  <h4 class="col-sm-12 col-md-12 title">System Flags</h4>
+                </div>
+                <div class="mesg-middle">
+                  <ul class="reminder-list">
+                    <li class="clearfix">
+                      <div class="col-sm-11 col-md-11">
+                        <p class="woid-number"><a href="#">WOID 1144332</a></p>
+                        <p class="reminder-descrip">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum printing and typesetting industry. Lorem Ipsum.</p>
+                        <span class="reminder-date">10:27 am</span>
+                      </div>
+                      <div class="col-sm-1 col-md-1 flags-circle"><p class="red"></p></div>
+                    </li>
+                    <li class="clearfix active">
+                      <div class="col-sm-11 col-md-11">
+                        <p class="woid-number"><a href="#">WOID 1144332</a></p>
+                        <p class="reminder-descrip">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum printing and typesetting industry. Lorem Ipsum.</p>
+                        <span class="reminder-date">10:27 am</span>
+                      </div>
+                      <div class="col-sm-1 col-md-1 flags-circle"><p class="red"></p></div>
+                    </li>
+                    <li class="clearfix">
+                      <div class="col-sm-11 col-md-11">
+                        <p class="woid-number"><a href="#">WOID 1144332</a></p>
+                        <p class="reminder-descrip">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum printing and typesetting industry. Lorem Ipsum.</p>
+                        <span class="reminder-date">10:27 am</span>
+                      </div>
+                      <div class="col-sm-1 col-md-1 flags-circle"><p class="green"></p></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="icons-group">
+              <a href="#" class="link"><i class="icon-exl-reminders icons"></i></a>
+              <span class="notification-alert">7</span>
+              <!-- Reminder Message Dropdown Start -->
+              <div class="message-dropdown" style="display:none;">
+                <span class="arrow-up"></span>
+                <div class="mesg-head clearfix">
+                  <h4 class="col-sm-6 col-md-6 title">Reminders</h4>
+                  <span class="col-sm-6 col-md-6 link-read">
+                    <a href="#">View All</a>
+                    <a href="#">Mark all as Read</a>
+                  </span>
+                </div>
+                <div class="mesg-middle">
+                  <ul class="reminder-list">
+                    <h5 class="todayspast-grey">Past Reminder</h5>
+                    <li class="clearfix">
+                      <div class="col-sm-11 col-md-11">
+                        <p class="woid-number"><a href="#">WOID 1144332</a></p>
+                        <p class="from-self">From: Self</p>
+                        <p class="reminder-descrip">Reminder for Appointment Letter. Please send confirmation letter for WOID 1533234 - insured said though last minute they can</p>
+                        <span class="reminder-date">9/18/17, 9AM EDT</span>
+                      </div>
+                      <span class="col-sm-1 col-md-1 reminder-arrow"><i class="fa fa-check-circle-o" aria-hidden="true"></i></span>
+                    </li>
+                    <h5 class="todayspast-grey">Today&apos;s Reminders</h5>
+                    <li class="clearfix">
+                      <div class="col-sm-11 col-md-11">
+                        <p class="woid-number"><a href="#">WOID 1144332</a></p>
+                        <p class="from-self">From: Self</p>
+                        <p class="reminder-descrip">Dr. Appointment 10/2 9AM -3PM EDT</p>
+                        <span class="reminder-date">10/2/17, 9AM EDT</span>
+                      </div>
+                      <span class="col-sm-1 col-md-1 reminder-arrow"><i class="fa fa-check-circle-o" aria-hidden="true"></i></span>
+                    </li>
+                    <li class="clearfix">
+                      <div class="col-sm-11 col-md-11">
+                        <p class="woid-number"><a href="#">WOID 1332200</a></p>
+                        <p class="from-self">From: Scheduler Smith </p>
+                        <p class="reminder-descrip">Follow up with Agent on WOID 1332200 – Agent said to call back tomorrow.</p>
+                        <span class="reminder-date">9/19/17, 9AM EDT</span>
+                      </div>
+                      <span class="col-sm-1 col-md-1 reminder-arrow"><i class="fa fa-check-circle-o" aria-hidden="true"></i></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mesg-footer"><a href="#">+ Create a Reminder</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Left Panel Start -->
+  <div class="leftpanel">
+    <nav class="navigation clearfix " >
+      <ul>
+        <li class="active"><a href="#"><i class="icon-exl-order nav-icons"></i><span class="hidden-xs">Orders</span></a></li>
+        <li><a href="#"><i class="icon-exl-agenda nav-icons agenda"></i><span class="hidden-xs">Agenda</span></a></li>
+        <li class="hidden-xs"><a href="#"><i class="icon-exl-reports nav-icons report icon-left"></i>Reports</span></a></li>
+      </ul>
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse nav-collapse-view clearfix navmobile" id="bs-example-navbar-collapse-1">
+        <ul class="clearfix">
+          <li><a href="#"><i class="icon-exl-reports nav-icons report icon-left"></i>Reports</span></a></li>
+          <li><a href="#"><i class="icon-exl-reports nav-icons report icon-left"></i>Other 1</span></a></li>
+          <li><a href="#"><i class="icon-exl-reports nav-icons report icon-left"></i>Other 2</span></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Main Container Start -->
+  <div class="main-container">
+    <!-- Middle Portion Start -->
+    <div class="container-fluid middle-portion">
+      <div class="row marginbtm clearfix hidden-xs">
+          <!-- Top Bread Crumb Section -->
+          <div class="col-sm-12 col-md-5">
+            <ul class="breadcrumb">
+              <li class="active">Orders</li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-7 breadcrumb-rtportion">
+            <span class="search-input clearfix">
+              <input type="text" class="inputbox" value="Search">
+              <a href="#" class="iconsearch"><i class="fa fa-search" aria-hidden="true"></i></a>
+            </span>
+            <span class="selectbox insure-select-form">
+              <select class="cs-select cs-skin-border">
+                <option>Insured Name</option>
+                <option value="">Select 1</option>
+                <option value="">Select 2</option>
+                <option value="">Select 3</option>
+              </select>
+            </span>
+          </div>
+      </div>
+      <div class="page-title-blue row">
+        <h3 class="title col-sm-6 col-md-6 hidden-xs">ORDERS</h3>
+      </div>
+      <div class="row woid-tabs-greybox">
+        <div class="clearfix">
+          <span class="col-xs-5 col-sm-5 col-md-5 btn-back topmargin"><a href="#"><i class="icon-exl-previous arrow-previous"></i>Back</a></span>
+          <button type="button" class="btn btn-primary launchaudit-btn">LAUNCH AUDIT TOOL</button>
+        </div>
+        <div class="col-sm-12 col-md-12">
+          <div class="workid-whitebox clearfix">
+            <a href="#" class="col-xs-2 col-sm-1 col-md-1 arrow-previous"><i class="icon-exl-arrow-left"></i></a>
+            <span class="col-xs-8 col-sm-10 col-md-10 woid-id-number">Work Order ID: 198855774</span>
+            <a href="#" class="col-xs-2 col-sm-1 col-md-1 arrow-next"><i class="icon-exl-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="clearfix">
+          <div class="col-sm-12 col-md-4 action-links pull-right">
+            <a href="#"><i class="icon-exl-show-actions action-icon eye"></i>Show Related Actions</a>
+            <a href="#"><i class="icon-exl-add action-icon"></i>Create New Action</a>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-8 pull-right">
+            <nav class="navigation clearfix">
+              <div class="navbar-header navcollapse navicon-margin">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <ul class="nav nav-tabs order-subtabs">
+                  <li><a href="WOID-details.html">General Information</a></li>
+                  <li><a href="WOID-details-progress-report.html">Progress Report</a></li>
+                  <li><a href="WOID-details-documents.html">Documents</a></li>
+                  <li class="active"><a href="WOID-details-appointments.html">Appointment</a></li>
+                  <li><a href="WOID-details-records.html">Records</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="clearfix">
+        <!-- Progress Report Tab Start -->
+        <div class="insuredtl-whitebox clearfix">
+          <div class="col-xs-6 col-sm-2 col-md-2">
+            <h6 class="insure-label">insured</h6>
+            <p class="insure-value">Olaf’s Ice Cream</p>
+          </div>
+          <div class="col-xs-6 col-sm-2 col-md-2">
+            <h6 class="insure-label">Product Line</h6>
+            <p class="insure-value">OSI Pivot Audit</p>
+          </div>
+          <div class="col-xs-6 col-sm-3 col-md-3">
+            <h6 class="insure-label">Policy Type</h6>
+            <p class="insure-value">Workers Compensation</p>
+          </div>
+        </div>
+
+        <div class="appoint-current-whitebox">
+          <div class="date-label">20 <small class="month">OCT</small></div>
+          <div class="border-btm clearfix">
+            <div class="appointment-dtl-left">
+              <div class="appoint-time-slot clearfix">
+                <span class="locationicon"><i class="icon-exl-location"></i></span>
+                <div class="appoint-time-column">
+                  <label class="time-label">Appointment Time</label>
+                  <span class="time-big">10:00 am - 11:00 am CST</span>
+                  <p class="client-time">Client Time: 9:00 am - 10:00 am EDT</p>
+                  <p class="clock-hour"><i class="icon-exl-clock clock"></i>1 hr</p>
+                </div>
+                <div class="appoint-time-column">
+                  <label class="time-label">Window Slot</label>
+                  <span class="time-big">9:30 am - 11:30 am CST</span>
+                  <p class="client-time">Client Time: 8:30 am - 10:30 am EDT</p>
+                  <p class="clock-hour"><i class="icon-exl-clock clock"></i>2 hr</p>
+                </div>
+                <a href="#" class="view-agenda-link">View Day Agenda</a>
+              </div>
+              <div class="appoint-namepolicy-note clearfix">
+                <span class="appoint-name">John Smith K</span>
+                <span class="appoint-address">
+                  22, St. Armand’s Circle, Tampa, Florida <br><br>
+                  (874) 732 7712
+                </span>
+                <span class="policy-type deviderline">
+                  <label class="policy-label">Policy Type</label>
+                  <p>Workers Compensation</p>
+                </span>
+                <span class="policy-notes">
+                  <label class="policy-label">Notes</label>
+                  <p>Walk through the store for inventory checks andrecord/ validate with records provided to us in t...</p>
+                </span>
+                <a href="#" class="policy-edit"><i class="icon-exl-edit"></i></a>
+              </div>
+            </div>
+
+            <div class="status-colum">
+              <label class="status-label">Status</label>
+              <span class="schedule-big">Scheduled</span>
+              <p class="post-sent">US Mail Sent</p>
+              <!-- <p class="link-confirm clearfix">
+                <a href="WOID-details-appointments-confirm.html">Confirm <i class="icon-exl-arrow-down arrowdown"></i></a>
+                <a href="#">Re-schedule</a>
+                <a href="#">Cancel <br>Appointment</a>
+              </p> -->
+            </div>
+          </div>
+          <!-- Current Appointment Date Expandable Start -->
+          <div class="clearfix">
+            <div class="latterdilivery-record clearfix">
+            <div class="col-sm-12 col-md-6 border-right">
+              <div class="latter-delivery-info">
+                <h5 class="latter-title">Letter Delivery Information</h5>
+                <div class="clearfix row">
+                  <div class="col-xs-12 col-sm-7 col-md-7">
+                    <div class="letterdeli-form row">
+                      <label class="col-xs-12 col-sm-5 label-left">Contact Name:</label>
+                      <div class="col-xs-12 col-sm-7">John McClaine</div>
+                    </div>
+                    <div class="letterdeli-form row">
+                      <label class="col-xs-12 col-sm-5 label-left">Phone:</label>
+                      <div class="col-xs-12 col-sm-7">(853)-530-9912</div>
+                    </div>
+                    <div class="letterdeli-form row">
+                      <label class="col-xs-12 col-sm-5 label-left">Email:</label>
+                      <div class="col-xs-12 col-sm-7">contact@olafsicecreams.biz</div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-5 col-md-5">
+                    <div class="letterdeli-form row">
+                      <label class="col-sm-12 adress-label">Address:</label>
+                      <div class="col-sm-12">456 N Rodeo Dr, Beverly Hills, CA 90210</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <form class="inline-form appoint-form clearfix">
+                <div class="form-group clearfix">
+                  <label class="control-label">NAME</label>
+                  <div class="input-wrap">
+                    <input type="text" class="form-control" placeholder="" value="John K Smith">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label class="control-label">Email</label>
+                  <div class="input-wrap">
+                    <input type="text" class="form-control" placeholder="" value="martin@olaficecream.com">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label class="control-label">STREET Address</label>
+                  <div class="input-wrap">
+                    <input type="text" class="form-control" placeholder="" value="22, St. Armand’s Circle">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label class="control-label">CITY</label>
+                  <div class="input-wrap">
+                    <input type="text" class="form-control" placeholder="" value="Tampa">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label class="control-label">STATE</label>
+                  <div class="input-wrap">
+                    <input type="text" class="form-control" placeholder="" value="Florida">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label class="control-label">ZIP CODE</label>
+                  <div class="input-wrap">
+                    <input type="text" class="form-control" placeholder="" value="27030">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label class="control-label">CONTACT NO.</label>
+                  <div class="input-wrap">
+                    <input type="text" class="form-control" placeholder="" value="874 732 7712">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label class="control-label">NOTES</label>
+                  <div class="input-wrap">
+                    <textarea class="textarea" rows="4">Walk through the store for inventory checks and record/ validate with records provided to us in the details of the location.</textarea>
+                  </div>
+                </div>
+                <div class="form-group margin-top-30 clearfix">
+                  <label class="control-label margintopnone">LETTER TYPE</label>
+                  <div class="input-wrap">
+                    <div class="col-sm-2 checklabel post-spacing">
+                      <label class="check-wrap">
+                        <input type="checkbox" name="" checked>
+                        <span class="check-label">Post</span>
+                      </label>
+                    </div>
+                    <div class="col-sm-3 checklabel">
+                      <label class="check-wrap">
+                        <input type="checkbox" name="" checked>
+                        <span class="check-label">Email</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="btngroups clearfix">
+                  <button type="button" class="btn btn-primary btn-size">CONFIRM</button>
+                  <button type="button" class="btn btn-border btn-size">CANCEL</button>
+                </div>
+              </form> -->
+            </div>
+            <div class="col-sm-12 col-md-6 border-left">
+              <div class="appoint-records">
+                <h5 class="records-title">RECORDS</h5>
+                <div class="record-list row">
+                  <div class="col-xs-12 col-sm-4">Audit Type:</div>
+                  <div class="col-xs-12 col-sm-8 paddrt-none">Workers Comp, Umbrella, Inland Marine</div>
+                </div>
+                <div class="record-list row">
+                  <div class="col-xs-12 col-sm-4">Records Requested:</div>
+                  <div class="col-xs-12 col-sm-8 paddrt-none">Overtime paid classification, Cafeteria 125 amounts, Timecards showing start and stop times, Most rescent tax returns</div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div>
+              <form class="inline-form appoint-form clearfix">
+                <div class="form-group clearfix">
+                  <label class="control-label topmargin">NOTES</label>
+                  <div class="input-wrap">
+                    <textarea class="textarea">Walk through the store for inventory checks and record/ validate with records provided to us in the details of the location.</textarea>
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label class="control-label">DELIVERY MEDIUM</label>
+                  <div class="input-wrap">
+                    <div class="clearfix">
+                      <label class="radio-label">
+                        <input type="radio" name="mail" checked>
+                        <span class="check-label">US Mail</span>
+                      </label>
+                      <label class="radio-label">
+                        <input type="radio" name="mail">
+                        <span class="check-label">Email</span>
+                      </label>
+                      <label class="radio-label">
+                        <input type="radio" name="mail">
+                        <span class="check-label">None</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group btngroups clearfix">
+                  <button type="button" class="btn btn-primary btn-size">CONFIRM</button>
+                  <button type="button" class="btn btn-border btn-size">CANCEL</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix">
+          <div class="table-greyhead">HISTORY</div>
+          <div class="grid-table transparent">
+            <ul>
+              <li class="grid-title clearfix">
+                <span class="col col-6">&nbsp;</span>
+                <span class="col col-14">CHANGED DATE</span>
+                <span class="col col-20">Letter Address</span>
+                <span class="col col-12">APPT Date</span>
+                <span class="col col-14">WINDOW TIME</span>
+                <span class="col col-18">NOTES</span>
+                <span class="col col-15">STATUS</span>
+              </li>
+              <li class="clearfix">
+                <span class="col col-6"><i class="icon-exl-location location"></i></span>
+                <span class="col col-14">23/7/2017</span>
+                <span class="col col-20">456 N Rodeo Dr, Beverly Hills, CA 65</span>
+                <span class="col col-12">21/7/2017</span>
+                <span class="col col-14">8:30 am - 12:30 pm</span>
+                <span class="col col-18">Lorem Ipsum dolor...</span>
+                <span class="col col-15">Rescheduled (Post Sent)</span>
+              </li>
+              <li class="clearfix">
+                <span class="col col-6"><i class="icon-exl-location location"></i></span>
+                <span class="col col-14">17/6/2017</span>
+                <span class="col col-20">johnsmith@gmail.com</span>
+                <span class="col col-12">16/6/2017</span>
+                <span class="col col-14">9:00 am - 5:00 pm</span>
+                <span class="col col-18">--</span>
+                <span class="col col-15">Rescheduled (Email Sent</span>
+              </li>
+              <li class="clearfix">
+                <span class="col col-6"><i class="icon-exl-phone phone"></i></span>
+                <span class="col col-14">11/5/2017</span>
+                <span class="col col-20">--</span>
+                <span class="col col-12">11/5/2017</span>
+                <span class="col col-14">2:00 pm - 8:00 pm</span>
+                <span class="col col-18">--</span>
+                <span class="col col-15">Confirmed (No Letter Sent)</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Portion Start -->
+    <footer>
+      <div class="container-fluid margin-left-none">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 col-md-4 copy-right">&copy; 2017 EXL. All rights reserved.</div>
+          <div class="col-xs-12 col-sm-8 col-md-8 ftr-link">
+            <a href="#">Legal Disclaimer</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="bootstrap/js/npm.js"></script>
+  <script src="assets/js/classie.js"></script>
+  <script src="assets/js/selectFx.js"></script>
+  <script>
+    (function() {
+      [].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {
+        new SelectFx(el);
+      } );
+    })();
+  </script>
+
+</body>
+</html>

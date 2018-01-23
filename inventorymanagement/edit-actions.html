@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>EXL</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+  </head>
+<body>
+  <!-- Header Portion Start -->
+  <header>
+    <div class="container-fluid margin-left-none">
+      <div class="row clearfix">
+        <div class="logo"><img src="assets/img/exl-logo.png" alt="Logo"></div>
+        <div class="inventory-logo col-sm-2"><img src="assets/img/inventory-management.png"></div>
+        <div class="col-xs-12 col-sm-8 pull-right">
+          <h5 class="title visible-xs ordertitle">ORDERS</h5>
+          <div class="userdtl-dropdown clearfix">
+              <div class="user-dtls clearfix">
+                <span class="fa fa-user-circle-o header-usericon visible-xs" aria-hidden="true"></span>
+                <div class="pull-left hidden-xs">
+                  <h6 class="username">Mary Smith</h6>
+                  <span class="user-location">Colombian Ins Grp</span>
+                </div>
+                <i class="drop-arrow fa fa-angle-down hidden-xs" aria-hidden="true"></i>
+              </div>
+              <ul class="dropdowns">
+                <li><a href="#">Dropdown 1</a></li>
+                <li><a href="#">Dropdown 2</a></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+          </div>
+          <div class="notifi-messge-icons">
+            <!-- Search Icon for Mobile View Start -->
+            <div class="icons-group visible-xs">
+              <a href="#" class="link"><i class="icon-exl-search-document icons search"></i></a>
+            </div>
+            <div class="icons-group">
+              <a href="#" class="link"><i class="icon-exl-system-flags icons flag"></i></a>
+              <span class="notification-alert">2</span>
+            </div>
+            <div class="icons-group">
+              <a href="#" class="link"><i class="icon-exl-reminders icons"></i></a>
+              <span class="notification-alert">7</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Left Panel Start -->
+  <div class="leftpanel">
+    <nav class="navigation clearfix " >
+      <ul>
+        <li class="active"><a href="#"><i class="icon-exl-order nav-icons"></i><span class="hidden-xs">Orders</span></a></li>
+        <li><a href="#"><i class="icon-exl-agenda nav-icons agenda"></i><span class="hidden-xs">Agenda</span></a></li>
+        <li class="hidden-xs"><a href="#"><i class="icon-exl-reports nav-icons report icon-left"></i>Reports</span></a></li>
+      </ul>
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse nav-collapse-view clearfix navmobile" id="bs-example-navbar-collapse-1">
+        <ul class="clearfix">
+          <li><a href="#"><i class="icon-exl-reports nav-icons report icon-left"></i>Reports</span></a></li>
+          <li><a href="#"><i class="icon-exl-reports nav-icons report icon-left"></i>Other 1</span></a></li>
+          <li><a href="#"><i class="icon-exl-reports nav-icons report icon-left"></i>Other 2</span></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Main Container Start -->
+  <div class="main-container">
+    <!-- Middle Portion Start -->
+    <div class="middle-portion">
+
+      <!-- New Actions Page Start -->
+      <div class="new-actions" style="margin:5% 0 0 5%; background-color:white">
+        <div class="newaction-head">
+          <h4 class="heading">EDIT ACTION</h4>
+        </div>
+        <form class="inline-form newaction-form">
+          <div class="form-group clearfix">
+            <label class="control-label margin-top-none">Status</label>
+            <div class="input-wrap">
+              <div class="row">
+                <label class="col-sm-4 col-md-4 radiobtn">
+                  <input type="radio" name="Completed" checked>
+                  <span class="check-label">Not Completed</span>
+                </label>
+                <label class="col-sm-6 col-md-6 radiobtn">
+                  <input type="radio" name="Completed">
+                  <span class="check-label">Completed</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group clearfix">
+            <label class="control-label">Assign To</label>
+            <div class="input-wrap">
+              <span class="selectbox">
+                <select class="cs-select cs-skin-border">
+                  <option>Self (default)</option>
+                  <option value="">Select 1</option>
+                  <option value="">Select 2</option>
+                  <option value="">Select 3</option>
+                </select>
+              </span>
+            </div>
+          </div>
+          <div class="form-group clearfix">
+            <label class="control-label">WOID No.<small class="optional">(Optional)</small></label>
+            <div class="input-wrap">
+              <input type="text" class="form-control" placeholder="" value="1533234">
+            </div>
+          </div>
+          <div class="form-group clearfix">
+            <label class="control-label">Notes</label>
+            <div class="input-wrap">
+              <textarea class="form-control textarea">Speak to agent and update documents</textarea>
+              <small class="max-words">0/500</small>
+            </div>
+          </div>
+          <div class="form-group clearfix">
+            <label class="control-label">Due Date</label>
+            <div class="input-wrap">
+              <div class="row">
+                <div class="col-sm-6 col-md-6 form-date">
+                  <input type="date" class="form-control date" placeholder="dd/mm/yyyy">
+                  <a href="" class="icon-exl-calendar calendar-icon"></a>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="row">
+                    <label class="control-label col-sm-5 col-md-5 setlabel">Set Time</label>
+                    <div class="col-sm-7 col-md-7 label-setime-input">
+                      <input type="text" class="form-control" placeholder="00:00 am" value="02:30 PM">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group clearfix">
+            <label class="control-label hidden-xs">&nbsp;</label>
+            <div class="input-wrap savecancel-buttons">
+              <button type="button" class="btn btn-primary">Save</button>
+              <button type="button" class="btn btn-border">Cancel</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Footer Portion Start -->
+    <footer>
+      <div class="container-fluid margin-left-none">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 col-md-4 copy-right">&copy; 2017 EXL. All rights reserved.</div>
+          <div class="col-xs-12 col-sm-8 col-md-8 ftr-link">
+            <a href="#">Legal Disclaimer</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="bootstrap/js/npm.js"></script>
+  <script src="assets/js/classie.js"></script>
+  <script src="assets/js/selectFx.js"></script>
+  <script>
+    (function() {
+      [].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {
+        new SelectFx(el);
+      } );
+    })();
+  </script>
+
+</body>
+</html>

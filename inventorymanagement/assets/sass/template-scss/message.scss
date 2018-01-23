@@ -1,0 +1,183 @@
+/* Messages CSS Style */
+.view-message {
+  background-color: $color-white;
+  padding: 15px 0;
+  min-height: 500px;
+  .subject-view {
+    margin-top: 4%;
+  }
+}
+
+.create-message {
+  background-color: $color-white;
+  padding: 15px 0;
+  min-height: 500px;
+  .create-mesg-form {
+    margin-top: 40px;
+    .form-group {
+      margin: 15px 0;
+    }
+  }
+
+  .other-mesg-list {
+    margin-top: 30px;
+    ul {
+      list-style: none;
+      margin: 0;
+      li {
+        padding: 10px 0;
+        border-bottom: 1px solid $color-light-blue3;
+        .names {
+          font-size: 0.929em;
+        }
+        .time {
+          font-size: 0.857em;
+          color: $color-light-blue2;
+        }
+        .description {
+          font-size: 0.857em;
+          color: $color-light-blue2;
+        }
+        .btn-margin {
+          margin-left: 10px;
+        }
+        &.active {
+          background-color: $color-light-blue4;
+        }
+      }
+    }
+  }
+}
+
+/* Messages CSS Style */
+.message-wrap {
+  background-color: $color-white;
+  .message-left-side {
+    background-color: $color-light-blue4;
+    padding: 0;
+    .btn-new-msg {
+      margin: 20px auto;
+      display: block;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      li {
+        border-bottom: 1px solid $color-light-blue;
+        a {
+          padding: 10px 20px;
+          color: $left-panel;
+          display: block;
+          &:hover {
+            background-color: $color-white;
+          }
+          .mesgr-name {
+            margin: 0;
+            font-weight: 400;
+          }
+          .mesg-descrip {
+            font-size: 0.857em;
+            margin: 5px 0;
+          }
+          .mesg-date {
+            font-size: 0.857em;
+            margin: 0;
+            color: $color-light-blue;
+          }
+        }
+        &.active {
+          background-color: $color-white;
+        }
+      }
+    }
+  }
+  .message-rt-side {
+    .btn-send {
+      margin-top: 15px;
+      float: right;
+    }
+    .mesg-sent-list {
+      ul {
+        list-style: none;
+        margin: 0;
+        li {
+          margin: 10px 0;
+          &:nth-child(even){
+            text-align: right;
+          }
+          .descrip {
+            font-size: 0.929em;
+            margin-bottom: 0;
+          }
+          .user-name {
+            font-size: 0.929em;
+            margin: 5px 0;
+          }
+          .date {
+            font-size: 0.857em;
+            color: $color-light-blue;
+          }
+        }
+      }
+    }
+  }
+  .new-message-form {
+    .form-group {
+      margin: 15px 0;
+    }
+  }
+  .send-btn {
+    margin-left: 10px;
+  }
+}
+
+/* Reminder CSS Style */
+.create-reminder {
+  background-color: $color-white;
+  padding-bottom: 40px;
+  .create-reminder-form {
+    margin-top: 40px;
+    .form-group {
+      margin: 20px 0;
+      .label-setime {
+        padding-right: 0;
+      }
+      .label-setime-input {
+        padding-right: 4px;
+      }
+      .btn-margin {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.upcoming-reminder {
+  margin-top: 30px;
+  ul {
+    list-style: none;
+    margin: 0;
+    li {
+      padding: 10px 0;
+      border-bottom: 1px solid $color-light-blue3;
+      &.title-bar {
+        @include font-montserrat;
+        text-transform: uppercase;
+      }
+      .date-time {
+        font-size: 0.857em;
+        color: $color-light-blue2;
+      }
+      .description {
+        font-size: 0.857em;
+        color: $color-light-blue2;
+      }
+      .btn-margin {
+        margin-left: 10px;
+      }
+      &.active {
+        background-color: $color-light-blue4;
+      }
+    }
+  }
+}

@@ -1,0 +1,577 @@
+.setime-only {
+    border: 1px solid #ccc;
+
+    .ui-datepicker {
+        width: 100px !important;
+    }
+
+    .ui-inputtext {
+        width: 90px;
+    }
+
+    .ui-timepicker {
+        .ui-hour-picker a, .ui-minute-picker a {
+            font-size: 12px !important;
+        }
+    }
+
+    .ui-timepicker {
+        .ui-separator a {
+            font-size: 12px !important;
+        }
+    }
+}
+
+.meeting-time {
+    font-size: 0.786em;
+
+    .form-calendar-control {
+        width: 86px;
+        display: inline-block;
+        height: 30px;
+        font-size: 12px;
+
+        .ui-inputtext {
+            width: 67px;
+            padding: 0px 0px 0px 0px;
+            border: none;
+        }
+
+        .ui-calendar {
+            padding: 4px;
+        }
+    }
+
+    .edit-note {
+        float: none !important;
+    }
+}
+.schedule-container {
+    .auto-schedule-toaster {
+        position: absolute;
+        background: #fff8df;
+        z-index: 6;
+        @include border-radius(3px);
+        @include box-shadow(0px 0px 7px -1px $header-dropdown-shadow);
+        border: 1px solid #eae0ba;
+        padding: 10px;
+
+
+        .label {
+            color: #2f3a49;
+            font-weight: normal;
+            width: 80%;
+            text-align: left;
+            float: left;
+
+            .check-wrap {
+                margin-top: 8px;
+                display: block;
+
+                span {
+                    font-weight: normal;
+                }
+            }
+
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+
+    .event-section {
+        position: relative;
+
+        .auto-schedule-toaster {
+            width: 509px;
+            left: 30%;
+            top: 37%;
+            
+        @media #{$mobile}{
+            width: 80%;
+            left: 8%;
+            padding: 5px;
+        }
+        }
+    }
+
+    .agenda-table-wrap {
+        .schedule {
+            .start-label {
+                min-width: 135px;
+                width: auto;
+                line-height: 34px;
+            }
+
+            .agenda-endroute-top {
+                min-height: 68px;
+
+                .btn-pins a {
+                    color: #008dd3;
+                    margin-top: 6px;
+
+                    .pin-icon {
+                        font-size: 24px;
+                        display: flex;
+                        margin-bottom: 9px;
+                        line-height: 14px;
+                        float: left;
+                        padding-right: 5px;
+                        color: #9bafc4;
+                    }
+                }
+            }
+
+            .agenda-table-mid {
+                ul.timerlist {
+                    li {
+                        float: left;
+                        width: 100%;
+                        margin-bottom: 82px;
+                        height: auto;
+                        border-top: 1px solid #9baaba;
+                        @media #{$small-device}{
+                            margin-bottom: 127px;
+                        }
+
+                        .timer-15-min {
+                            height: auto;
+                            margin: 0px;
+
+                            .auto-schedule-toaster {
+                                width: 100%;
+                                bottom: 69px;
+
+                                .label {
+                                    font-size: 0.9em;
+                                    margin-left: 20px;
+                                    width: 70%;
+                                    @media #{$max-767}{
+                                        margin-left: -4px;
+                                        width: 100%;
+                                        display: inline-block;
+                                        float: none;
+                                        white-space: unset;
+                                        line-height: 21px;
+                                    }
+
+                                    .check-wrap {
+                                        display: inline-block;
+                                        margin-left: 66px;
+                                        margin-top: 6px;
+                                        line-height: 26px;
+                                        @media #{$medium} {
+                                            display: block;
+                                            margin-left: 0;
+                                            margin-top: 8px;
+                                        }
+                                        @media #{$max-767}{
+                                            display: block;
+                                            margin-left: 0;
+                                        }
+
+                                    }
+                                    
+
+                                    span.check-label {
+                                        font-size: 0.8em;
+                                    }
+                                }
+                                .btn-primary{
+                                    @media #{$max-767}{
+                                        float:right;
+                                    }
+                                }
+                            }
+
+                            .drive-time-wrap {
+                                right: 65px;
+                                @media #{$mobile}{
+                                    right: 3px;
+                                }
+                            }
+
+                            .userdtl-whitebx {
+                                position: relative;
+                                left: 25px;
+                                .check-column .check-wrap{
+                                    left: 9px;
+                                }
+                                @media #{$max-767}{
+                                    width: 87%;
+                                }
+                                @media #{$extra-small-device}{
+                                    left: 3px;
+                                }
+
+                                .userdtl-location-column {
+                                    border-left: 0px;
+                                    width: 48%;
+                                    .lunch-note-descrip{
+                                        @media #{$max-767}{
+                                            border-right: 1px solid $color-light-blue23;  
+                                            width: calc(100% - 33px)
+                                        }
+                                    }
+                                    .arrow-mob-dropdown{
+                                        display: none;
+                                        @media #{$max-767}{
+                                            float: right;
+                                            width: 33px;
+                                            display: block;
+                                            line-height: 10em;
+                                            text-align: center;
+                                        }
+                                    }
+
+                                    &:nth-child(2){
+                                        border-left: 1px solid $color-light-blue23;
+                                        @media #{$max-767}{
+                                            border-bottom: 1px solid $color-light-blue23;
+                                        }
+                                    }
+                                    @media #{$mobile}{
+                                        padding: 7px 0 5px 12px;
+                                        border-left: 1px solid $color-light-blue23; 
+                                    }
+                                    @media #{$max-767}{
+                                    width: calc(100% - 38px);
+                                    float: right;
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    }
+                                    .userdtl-time {
+                                        width: 25%;
+                                        float: left;
+                                        margin-right: 10px;
+                                        margin-bottom: 8px;
+                                      
+                                        @media #{$max-767}{
+                                                width:100%;
+                                        }
+
+                                        @media #{$medium}{
+                                            width: 35%;
+                                            margin-right: 4px;
+                                        }
+                                        @media #{$mobile}{
+                                            width: 59%;
+                                        }
+                                       
+                                      
+                                       
+                                        .labels {
+                                            font-size: 0.996em;
+                                            color: #7b8999;
+                                            font-weight: normal;
+                                        }
+
+                                        .form-control {
+                                            height: 30px;
+                                            font-size: 12px;
+                                            padding: 7px 7px;
+                                            @include border-radius(5px);
+                                        }
+                                    }
+
+                                    .date-mid-label {
+                                        margin-top: 23px;
+                                        padding: 0px 10px 0px 0px;
+                                        float: left;
+                                        font-size: 1.2em;
+                                        @media #{$max-767}{
+                                            margin-top: 0px;
+                                    }
+                                        @media #{$medium}{
+                                            padding: 0px 4px 0px 0px;
+                                        }
+
+                                        span {
+                                            padding: 0px 5px;
+                                            vertical-align: middle;
+                                            color: #bbb;
+                                            font-size: 1.6em;
+                                        }
+                                    }
+
+                                    .meeting-time {
+                                        span {
+                                            color: $color-light-blue10;
+                                        }
+                                    }
+                                   
+                                }
+
+                                .confirm-column {
+                                    font-size: 0.957em;
+                                    margin-top: 28px;
+                                    margin-right: 20px;
+                                    width: auto;
+                                    @media #{$mobile}{
+                                        right: 1.5em;
+                                    }
+                                    @media #{$extra-small-device}{
+                                        margin-top: 11px;
+                                        margin-right: 33px
+                                    }
+
+                                    i {
+                                        display: inline-block;
+                                        margin-bottom: 4px;
+                                        vertical-align: middle;
+                                        margin-right: 6px;
+                                        font-size: 20px;
+                                    }
+                                }
+
+                                .middle-userdtl-column {
+                                    width: 96%;
+
+                                    .float-btn {
+                                        position: absolute;
+                                        right: -53px;
+                                        top: 36%;
+                                        background: #feffff;
+                                        @include border-radius(0px 4px 4px 0px);
+                                        @media #{$medium}{
+                                            top:30%;
+                                        }
+                                        @media #{$max-767}{
+                                           display: none;
+                                        }
+
+                                        &.disabled {
+                                            background: #dee5ec;
+                                        }
+
+                                        .arrow-btn {
+                                            float: left;
+                                            border-right: 1px solid #dcdcdc;
+
+                                            a {
+                                                padding: 9px;
+                                                display: block;
+                                                border-bottom: 1px solid #dcdcdc;
+                                                color: #4e5e73;
+                                                font-size: 1.4em;
+
+                                                &:last-child {
+                                                    border-bottom: 0px;
+                                                }
+                                            }
+                                        }
+
+                                        .dropdown-btn {
+                                            float: right;
+                                            padding: 5px;
+                                            line-height: 71px;
+                                        }
+                                    }
+
+                                    .userdtl-row {
+                                        .arrow-mob-dropdown{
+                                            display: none;
+                                            width: 27px;
+                                            @media #{$max-767}{
+                                                display:inline-block;
+                                                line-height: 7.5em;
+                                                text-align: center;
+                                            }
+                                          
+                                        }
+                                        .userdtl-column {
+                                            @media #{$mobile}{
+                                                .woidnumber,.locationicon {
+                                                    display: block;
+                                                }
+                                                &.schedule-drop-col{
+                                                @media #{$max-767}{
+                                                    width: calc(100% - 29px);
+                                                    border-right: 1px solid #ddd;
+
+                                                }
+                                            }
+                                            }
+                                           
+                                            .userdtl-time {
+                                                .form-control[disabled] {
+                                                    background-color: #ddd;
+                                                }
+                                                @media #{$medium}{
+                                                    width: 57%;
+                                                }
+                                                @media #{$mobile}{
+                                                    width: 38%;
+                                                }
+                                                
+                                                @media #{$extra-small-device}{
+                                                    width: 92%;
+                                                    margin-right: 4px;
+                                                }
+        
+                                            }
+
+                                            .save-notes {
+                                                float: right;
+                                                font-size: 16px;
+                                                margin-right: 10px;
+                                            }
+
+                                            .date-small {
+                                                div {
+                                                    font-size: 1.1em;
+
+                                                    a {
+                                                        font-size: 1.3em;
+                                                    }
+                                                }
+                                            }
+
+                                            .date-mid-label {
+                                                margin-top: 27px;
+                                                padding: 0px 10px 0px 0px;
+                                                float: left;
+
+                                                &.window-to {
+                                                    margin-top: 7px;
+                                                    font-size: 0.786em;
+                                                    color: #7b8999;
+                                                }
+
+                                                span {
+                                                    padding: 0px 5px;
+                                                    vertical-align: middle;
+                                                    color: #bbb;
+                                                    font-size: 1.3em;
+                                                }
+                                            }
+
+                                            .input-wrap {
+                                                textarea {
+                                                    width: calc(100% - 10px);
+                                                    height: 141px;
+                                                }
+
+                                                label.radiobtn {
+                                                    @media #{$mobile}{
+                                                        width:100%;
+                                                      
+                                                    }
+                                                    .check-label {
+                                                        font-size: 0.80em;
+                                                        line-height: 20px;
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        &.row2 {
+                                            @media #{$mobile}{
+                                                    display: block;
+                                            }
+                                            .userdtl-column:first-child {
+                                                border-right: 1px solid #e9edf6;
+                                                @media #{$mobile}{
+                                                    border-top: 1px solid #e9edf6;
+                                                    border-right: 0px;
+                                                    width: 100%;
+                                                }
+                                            }
+
+                                            .userdtl-column:last-child {
+                                                width: calc(100% - 33.3%);
+                                                @media #{$mobile}{
+                                                    width: 100%;
+                                                }
+                                            }
+                                        }
+
+                                        &.row3 {
+                                            .userdtl-column {
+                                                min-height: 197px;
+                                                @media #{$medium}{
+                                                    min-height: 306px;
+                                                }
+                                                
+                                                @media #{$mobile}{
+                                                    min-height: auto;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                &.home{
+                                    .userdtl-location-column{
+                                        width: 100%;
+                                        .lunch-note-descrip{
+                                            border-right: 0px;
+                                        }
+                                    }
+                                }
+                                &.eventCard {
+                                    position: relative;
+                                    @media #{$max-767}{
+                                        display: block;
+                                    }
+                                    .check-column{
+                                        @media #{$max-767}{
+                                            display: inline-block;
+                                            float: none;
+                                            margin-top: 32px;
+                                        }
+                                    }
+
+                                    .float-btn {
+                                        position: absolute;
+                                        right: -54px;
+                                        top: 7%;
+                                        background: #feffff;
+                                        @include border-radius(0px 4px 4px 0px);
+                                        @media #{$max-767}{
+                                            display: none;
+                                        }
+
+                                        &.disabled {
+                                            background: #dee5ec;
+                                        }
+
+                                        .arrow-btn {
+                                            float: left;
+                                            border-right: 1px solid #dcdcdc;
+
+                                            a {
+                                                padding: 9px;
+                                                display: block;
+                                                border-bottom: 1px solid #dcdcdc;
+                                                color: #4e5e73;
+                                                font-size: 1.4em;
+
+                                                &:last-child {
+                                                    border-bottom: 0px;
+                                                }
+                                            }
+                                        }
+
+                                        .dropdown-btn {
+                                            float: right;
+                                            padding: 5px;
+                                            line-height: 71px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .new-group {
+                padding: 20px;
+                border: 1px solid #008dd3;
+                color: #008dd3;
+                text-align: center;
+                margin-top: 25px;
+            }
+        }
+    }
+}

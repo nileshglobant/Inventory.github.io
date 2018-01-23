@@ -1,0 +1,814 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>EXL</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+  </head>
+<body>
+  <!-- Header Portion Start -->
+  <header>
+    <div class="container-fluid margin-left-none">
+      <div class="row clearfix">
+        <div class="logo"><img src="assets/img/exl-logo.png" alt="Logo"></div>
+        <div class="inventory-logo col-sm-2"><img src="assets/img/inventory-management.png"></div>
+        <div class="col-xs-12 col-sm-8 pull-right">
+          <h5 class="title visible-xs ordertitle">ORDERS</h5>
+          <div class="userdtl-dropdown clearfix">
+              <div class="user-dtls clearfix">
+                <span class="fa fa-user-circle-o header-usericon visible-xs" aria-hidden="true"></span>
+                <div class="pull-left hidden-xs">
+                  <h6 class="username">Mary Smith</h6>
+                  <span class="user-location">Colombian Ins Grp</span>
+                </div>
+                <i class="drop-arrow fa fa-angle-down hidden-xs" aria-hidden="true"></i>
+              </div>
+              <ul class="dropdowns">
+                <li><a href="#">Dropdown 1</a></li>
+                <li><a href="#">Dropdown 2</a></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+          </div>
+          <div class="notifi-messge-icons">
+            <!-- Search Icon for Mobile View Start -->
+            <div class="icons-group visible-xs">
+              <a href="#" class="link"><i class="icon-exl-search-document icons search"></i></a>
+            </div>
+
+            <div class="icons-group">
+              <a href="#" class="link"><i class="icon-exl-system-flags icons flag"></i></a>
+              <span class="notification-alert">2</span>
+              <!-- Reminder Message Dropdown Start -->
+              <div class="message-dropdown" style="display:none">
+                <span class="arrow-up"></span>
+                <div class="mesg-head clearfix">
+                  <h4 class="col-sm-12 col-md-12 title">System Flags</h4>
+                </div>
+                <div class="mesg-middle">
+                  <ul class="reminder-list">
+                    <li class="clearfix">
+                      <div class="col-sm-11 col-md-11">
+                        <p class="woid-number"><a href="#">WOID 1144332</a></p>
+                        <p class="reminder-descrip">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum printing and typesetting industry. Lorem Ipsum.</p>
+                        <span class="reminder-date">10:27 am</span>
+                      </div>
+                      <div class="col-sm-1 col-md-1 flags-circle"><p class="red"></p></div>
+                    </li>
+                    <li class="clearfix active">
+                      <div class="col-sm-11 col-md-11">
+                        <p class="woid-number"><a href="#">WOID 1144332</a></p>
+                        <p class="reminder-descrip">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum printing and typesetting industry. Lorem Ipsum.</p>
+                        <span class="reminder-date">10:27 am</span>
+                      </div>
+                      <div class="col-sm-1 col-md-1 flags-circle"><p class="red"></p></div>
+                    </li>
+                    <li class="clearfix">
+                      <div class="col-sm-11 col-md-11">
+                        <p class="woid-number"><a href="#">WOID 1144332</a></p>
+                        <p class="reminder-descrip">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum printing and typesetting industry. Lorem Ipsum.</p>
+                        <span class="reminder-date">10:27 am</span>
+                      </div>
+                      <div class="col-sm-1 col-md-1 flags-circle"><p class="green"></p></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="icons-group">
+              <a href="#" class="link"><i class="icon-exl-reminders icons"></i></a>
+              <span class="notification-alert">7</span>
+              <!-- Reminder Message Dropdown Start -->
+              <div class="message-dropdown" style="display:none;">
+                <span class="arrow-up"></span>
+                <div class="mesg-head clearfix">
+                  <h4 class="col-sm-6 col-md-6 title">Reminders</h4>
+                  <span class="col-sm-6 col-md-6 link-read">
+                    <a href="#">View All</a>
+                    <a href="#">Mark all as Read</a>
+                  </span>
+                </div>
+                <div class="mesg-middle">
+                  <ul class="reminder-list">
+                    <h5 class="todayspast-grey">Past Reminder</h5>
+                    <li class="clearfix">
+                      <div class="col-sm-11 col-md-11">
+                        <p class="woid-number"><a href="#">WOID 1144332</a></p>
+                        <p class="from-self">From: Self</p>
+                        <p class="reminder-descrip">Reminder for Appointment Letter. Please send confirmation letter for WOID 1533234 - insured said though last minute they can</p>
+                        <span class="reminder-date">9/18/17, 9AM EDT</span>
+                      </div>
+                      <span class="col-sm-1 col-md-1 reminder-arrow"><i class="fa fa-check-circle-o" aria-hidden="true"></i></span>
+                    </li>
+                    <h5 class="todayspast-grey">Today&apos;s Reminders</h5>
+                    <li class="clearfix">
+                      <div class="col-sm-11 col-md-11">
+                        <p class="woid-number"><a href="#">WOID 1144332</a></p>
+                        <p class="from-self">From: Self</p>
+                        <p class="reminder-descrip">Dr. Appointment 10/2 9AM -3PM EDT</p>
+                        <span class="reminder-date">10/2/17, 9AM EDT</span>
+                      </div>
+                      <span class="col-sm-1 col-md-1 reminder-arrow"><i class="fa fa-check-circle-o" aria-hidden="true"></i></span>
+                    </li>
+                    <li class="clearfix">
+                      <div class="col-sm-11 col-md-11">
+                        <p class="woid-number"><a href="#">WOID 1332200</a></p>
+                        <p class="from-self">From: Scheduler Smith </p>
+                        <p class="reminder-descrip">Follow up with Agent on WOID 1332200 – Agent said to call back tomorrow.</p>
+                        <span class="reminder-date">9/19/17, 9AM EDT</span>
+                      </div>
+                      <span class="col-sm-1 col-md-1 reminder-arrow"><i class="fa fa-check-circle-o" aria-hidden="true"></i></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mesg-footer"><a href="#">+ Create a Reminder</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Left Panel Start -->
+  <div class="leftpanel">
+    <nav class="navigation clearfix " >
+      <ul>
+        <li class="active"><a href="#"><i class="icon-exl-order nav-icons"></i><span class="hidden-xs">Orders</span></a></li>
+        <li><a href="#"><i class="icon-exl-agenda nav-icons agenda"></i><span class="hidden-xs">Agenda</span></a></li>
+        <li class="hidden-xs"><a href="#"><i class="icon-exl-reports nav-icons report icon-left"></i>Reports</span></a></li>
+      </ul>
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse nav-collapse-view clearfix navmobile" id="bs-example-navbar-collapse-1">
+        <ul class="clearfix">
+          <li><a href="#"><i class="icon-exl-reports nav-icons report icon-left"></i>Reports</span></a></li>
+          <li><a href="#"><i class="icon-exl-reports nav-icons report icon-left"></i>Other 1</span></a></li>
+          <li><a href="#"><i class="icon-exl-reports nav-icons report icon-left"></i>Other 2</span></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Main Container Start -->
+  <div class="main-container">
+    <!-- Middle Portion Start -->
+    <div class="container-fluid middle-portion">
+      <div class="row marginbtm clearfix hidden-xs">
+          <!-- Top Bread Crumb Section -->
+          <div class="col-sm-12 col-md-5">
+            <ul class="breadcrumb">
+              <li class="active">Orders</li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-7 breadcrumb-rtportion">
+            <span class="search-input clearfix">
+              <input type="text" class="inputbox" value="Search">
+              <a href="#" class="iconsearch"><i class="fa fa-search" aria-hidden="true"></i></a>
+            </span>
+            <span class="selectbox insure-select-form">
+              <select class="cs-select cs-skin-border">
+                <option>Insured Name</option>
+                <option value="">Select 1</option>
+                <option value="">Select 2</option>
+                <option value="">Select 3</option>
+              </select>
+            </span>
+          </div>
+      </div>
+      <div class="page-title-blue row">
+        <h3 class="title col-sm-6 col-md-6 hidden-xs">ORDERS</h3>
+        <div class="col-sm-6 col-md-6 clearfix">
+          <div class="onoffswitch pull-right">
+              <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch1" checked>
+              <label class="onoffswitch-label" for="myonoffswitch1">
+                  <span class="onoffswitch-inner"></span><span class="onoffswitch-switch"></span>
+              </label>
+          </div>
+          <span class="schedule-appoint-label">Schedule Appointments</span>
+        </div>
+      </div>
+      <div class="row filter-greybox">
+        <div class="col-sm-12 col-md-12 clearfix">
+          <div class="col-sm-1 col-md-1 filter-title hidden-xs">Filters</div>
+          <div class="col-xs-10 col-sm-5 col-md-5 filter-select-form">
+            <span class="selectbox insure-select-form">
+              <select class="cs-select cs-skin-border">
+                <option>Default Status Filter</option>
+                <option value="">Select 1</option>
+                <option value="">Select 2</option>
+                <option value="">Select 3</option>
+              </select>
+            </span>
+          </div>
+          <div class="col-sm-1 col-md-1 filter-collaps">
+            <a href="orders.html">
+              <!-- <i class="icon-exl-collapsed collaps-icon"></i> -->
+              <i class="icon-exl-expanded collaps-icon"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 filter-mid-blue">
+          <!-- Filter Collapsible View Code -->
+          <!-- <div class="filter-descrip">
+            <p class="descrip">The selected filter comprises of the following:</p>
+            <p class="descrip">Status: Scheduled, Assigned, Confirmed, Appointment, Review, Completed, Closed Out, Others</p>
+            <p class="descrip">Tenure: 17 Days to Due Date</p>
+          </div> -->
+
+          <!-- Filter Expandable View Code -->
+          <div class="filter-expand">
+            <div class="clearfix">
+              <h4 class="col-xs-9 col-sm-6 col-md-6 title">EDIT/ CREATE FILTER</h4>
+              <span class="col-xs-3 col-sm-6 col-md-6 clearall"><a href="#">Clear All</a></span>
+            </div>
+            <div class="clearfix">
+              <div class="col-sm-3 col-md-3 status">
+                <div class="status-title">Status</div>
+                <ul class="status-check-list">
+                  <li>
+                    <label class="check-wrap">
+                      <input type="checkbox" name="">
+                      <span class="check-label">New</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="check-wrap">
+                      <input type="checkbox" name="">
+                      <span class="check-label">Completed</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="check-wrap">
+                      <input type="checkbox" name="">
+                      <span class="check-label">Bill Ready</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="check-wrap">
+                      <input type="checkbox" name="">
+                      <span class="check-label">Write Up</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="check-wrap">
+                      <input type="checkbox" name="">
+                      <span class="check-label">Schedule</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="check-wrap">
+                      <input type="checkbox" name="" checked>
+                      <span class="check-label">Confirmed Appointment</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="check-wrap">
+                      <input type="checkbox" name="">
+                      <span class="check-label">In Review</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="check-wrap">
+                      <input type="checkbox" name="">
+                      <span class="check-label">RFC</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="check-wrap">
+                      <input type="checkbox" name="" checked>
+                      <span class="check-label">Call to Schedule</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="check-wrap">
+                      <input type="checkbox" name="" checked>
+                      <span class="check-label">Holding</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-xs-12 col-sm-9 col-md-9 filter-show-work">
+                <div class="showork-title">Show Work Orders Closer to</div>
+                <div class="row clearfix">
+                  <div class="col-xs-6 col-sm-6 col-md-6 due-date">Past Due Date</div>
+                  <div class="col-xs-6 col-sm-6 col-md-6 due-date textrt">To Due Date</div>
+                </div>
+                <div class="progressbar-wrap">
+                  <div class="progressbar">
+                    <div class="left-bar">
+                      <span class="blue-bar pull-right" style="width: 29%;">
+                        <a href="#" class="circle">
+                          <div class="progress-tooltip">-15 Days<i class="arrow-bottom"></i></div>
+                        </a>
+                      </span>
+                    </div>
+                    <div class="right-bar">
+                      <span class="blue-bar pull-left" style="width: 46%;">
+                        <a href="#" class="circle pull-right">
+                          <div class="progress-tooltip">25 Days<i class="arrow-bottom"></i></div>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="progress-days clearfix">
+                    <span class="days"><i class="devider-line"></i>All</span>
+                    <span class="days"><i class="devider-line"></i>-45 Days</span>
+                    <span class="days"><i class="devider-line"></i>-30 Days</span>
+                    <span class="days"><i class="devider-line"></i>-15 Days</span>
+                    <span class="days"><i class="devider-line"></i>0 Days</span>
+                    <span class="days"><i class="devider-line"></i>15 Days</span>
+                    <span class="days"><i class="devider-line"></i>30 Days</span>
+                    <span class="days"><i class="devider-line"></i>45 Days</span>
+                    <span class="days"><i class="devider-line"></i>All</span>
+                  </div>
+                </div>
+                <h5 class="advance-filter-title">ADVANCE FilterS</h5>
+                <form class="filter-select-checkform">
+                  <div class="form-group clearfix">
+                    <label class="control-label">Business Unit:</label>
+                    <div class="select-form-wrap">
+                      <div class="whitebox clearfix">
+                        <span class="selected-checked">Commercial<a href="#" class="icon-exl-close closeicon"></a></span>
+                        <span class="selected-checked">Financial<a href="#" class="icon-exl-close closeicon"></a></span>
+                        <span class="selected-checked">Consumer<a href="#" class="icon-exl-close closeicon"></a></span>
+                        <a href="#" class="icon-exl-arrow-down arrow-down"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group clearfix">
+                    <label class="control-label">Audit Solution:</label>
+                    <div class="select-form-wrap">
+                      <div class="whitebox clearfix">
+                        <span class="selected-checked">OSI Physical Audit<a href="#" class="icon-exl-close closeicon"></a></span>
+                        <span class="selected-checked">OSI Phone Audit<a href="#" class="icon-exl-close closeicon"></a></span>
+                        <a href="#" class="icon-exl-arrow-down arrow-down"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group clearfix">
+                    <label class="control-label">Employee:</label>
+                    <div class="select-form-wrap">
+                      <div class="whitebox clearfix">
+                        <span class="selected-checked">Ray Charles<a href="#" class="icon-exl-close closeicon"></a></span>
+                        <span class="selected-checked">Maggie Cho<a href="#" class="icon-exl-close closeicon"></a></span>
+                        <a href="#" class="icon-exl-arrow-down arrow-down"></a>
+                      </div>
+                      <div class="filter-checkform-expand">
+                        <ul class="checklist">
+                          <li>
+                            <label class="check-wrap">
+                              <input type="checkbox" name="">
+                              <span class="check-label">Select All</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="check-wrap">
+                              <input type="checkbox" name="" checked>
+                              <span class="check-label">Ray Charles</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="check-wrap">
+                              <input type="checkbox" name="" checked>
+                              <span class="check-label">Maggie Cho</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="check-wrap">
+                              <input type="checkbox" name="">
+                              <span class="check-label">Ethan Charles</span>
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                </div>
+
+            </div>
+            <div class="filter-btn-group clearfix">
+              <button type="button" class="btn  btn-border marginrt" disabled>SAVE CHANGES</button>
+              <button type="button" class="btn btn-border">SAVE AS NEW</button>
+              <button type="button" class="btn btn-border pull-right">DELETE FILTER</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 clearfix">
+          <button type="button" class="btn btn-primary apply-filter">Apply Filter</button>
+        </div>
+      </div>
+
+      <div class="clearfix">
+        <div class="sortby-section clearfix">
+          <span class="selectbox soft-select-form">
+            <select class="cs-select cs-skin-border">
+              <option>WOID</option>
+              <option value="">8582459</option>
+              <option value="">Ascending</option>
+              <option value="">Descending</option>
+            </select>
+          </span>
+          <div class="sortby">Sort By</div>
+        </div>
+        <div class="table-bluehead">Filter Applied : Default Status Filter</div>
+        <div class="grid-table order-grid-scroll">
+          <ul>
+            <li class="grid-title clearfix">
+              <span class="col checkbx">&nbsp;</span>
+              <span class="col col-7">WOID</span>
+              <span class="col col-14">Biz Unit Name</span>
+              <span class="col col-6">Age <br>(Days)</span>
+              <span class="col">INSURED NAME</span>
+              <span class="col">Status</span>
+              <span class="col">PRODUCT LINE</span>
+              <span class="col col-13">Address</span>
+              <span class="col col-12">DATES / <br>EMPLOYEE</span>
+              <span class="col col-8">Svc Code / <br>WO Type</span>
+            </li>
+            <li class="clearfix">
+              <span class="col checkbx">
+                <label class="check-wrap">
+                  <input type="checkbox" name=""><span class="check-label"></span>
+                </label>
+              </span>
+              <span class="col col-7"><a href="#">8582459</a></span>
+              <span class="col col-14">Hartford Ins. Group</span>
+              <span class="col col-6">10</span>
+              <span class="col">ROZZZZP</span>
+              <span class="col">Scheduled</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-12">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-8">Normal</span>
+            </li>
+            <li class="clearfix select-row">
+              <span class="col checkbx">
+                <label class="check-wrap">
+                  <input type="checkbox" name=""><span class="check-label"></span>
+                </label>
+              </span>
+              <span class="col col-7"><a href="#">8417827</a></span>
+              <span class="col col-14">Atlantic Casualty Insurance</span>
+              <span class="col col-6">52</span>
+              <span class="col">Absolute</span>
+              <span class="col">Assigned</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-12">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-8">Normal</span>
+            </li>
+            <li class="clearfix">
+              <span class="col checkbx">
+                <label class="check-wrap">
+                  <input type="checkbox" name=""><span class="check-label"></span>
+                </label>
+              </span>
+              <span class="col col-7"><a href="#">1053330</a></span>
+              <span class="col col-14">ACME Insurance</span>
+              <span class="col col-6">15</span>
+              <span class="col">SJS Truck</span>
+              <span class="col">Review</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-12">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-8">Normal</span>
+            </li>
+            <li class="clearfix">
+              <span class="col checkbx">
+                <label class="check-wrap">
+                  <input type="checkbox" name=""><span class="check-label"></span>
+                </label>
+              </span>
+              <span class="col col-7"><a href="#">1057404</a></span>
+              <span class="col col-14">Western National</span>
+              <span class="col col-6">10</span>
+              <span class="col">Pine Mount</span>
+              <span class="col">Completed</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-12">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-8">Normal</span>
+            </li>
+            <li class="clearfix">
+              <span class="col checkbx">
+                <label class="check-wrap">
+                  <input type="checkbox" name=""><span class="check-label"></span>
+                </label>
+              </span>
+              <span class="col col-7"><a href="#">1189495</a></span>
+              <span class="col col-14">Midwestern</span>
+              <span class="col col-6">65</span>
+              <span class="col">Olaf’s Centre</span>
+              <span class="col">Closed Out</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-12">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-8">Normal</span>
+            </li>
+            <li class="clearfix">
+              <span class="col checkbx">
+                <label class="check-wrap">
+                  <input type="checkbox" name=""><span class="check-label"></span>
+                </label>
+              </span>
+              <span class="col col-7"><a href="#">8582459</a></span>
+              <span class="col col-14">Hartford Ins. Group</span>
+              <span class="col col-6">10</span>
+              <span class="col">ROZZZZP</span>
+              <span class="col">Scheduled</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-12">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-8">Normal</span>
+            </li>
+            <li class="clearfix">
+              <span class="col checkbx">
+                <label class="check-wrap">
+                  <input type="checkbox" name=""><span class="check-label"></span>
+                </label>
+              </span>
+              <span class="col col-7"><a href="#">8417827</a></span>
+              <span class="col col-14">Atlantic Casualty Insurance</span>
+              <span class="col col-6">52</span>
+              <span class="col">Absolute</span>
+              <span class="col">Assigned</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-12">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-8">Normal</span>
+            </li>
+            <li class="clearfix">
+              <span class="col checkbx">
+                <label class="check-wrap">
+                  <input type="checkbox" name=""><span class="check-label"></span>
+                </label>
+              </span>
+              <span class="col col-7"><a href="#">1053330</a></span>
+              <span class="col col-14">ACME Insurance</span>
+              <span class="col col-6">15</span>
+              <span class="col">SJS Truck</span>
+              <span class="col">Review</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-12">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-8">Normal</span>
+            </li>
+            <li class="clearfix">
+              <span class="col checkbx">
+                <label class="check-wrap">
+                  <input type="checkbox" name=""><span class="check-label"></span>
+                </label>
+              </span>
+              <span class="col col-7"><a href="#">1057404</a></span>
+              <span class="col col-14">Western National</span>
+              <span class="col col-6">10</span>
+              <span class="col">Pine Mount</span>
+              <span class="col">Completed</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-12">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-8">Normal</span>
+            </li>
+            <li class="clearfix">
+              <span class="col checkbx">
+                <label class="check-wrap">
+                  <input type="checkbox" name=""><span class="check-label"></span>
+                </label>
+              </span>
+              <span class="col col-7"><a href="#">1189495</a></span>
+              <span class="col col-14">Midwestern</span>
+              <span class="col col-6">65</span>
+              <span class="col">Olaf’s Centre</span>
+              <span class="col">Closed Out</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-12">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-8">Normal</span>
+            </li>
+            <li class="clearfix">
+              <span class="col checkbx">
+                <label class="check-wrap">
+                  <input type="checkbox" name=""><span class="check-label"></span>
+                </label>
+              </span>
+              <span class="col col-7"><a href="#">8582459</a></span>
+              <span class="col col-14">Hartford Ins. Group</span>
+              <span class="col col-6">10</span>
+              <span class="col">ROZZZZP</span>
+              <span class="col">Scheduled</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-12">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-8">Normal</span>
+            </li>
+            <li class="clearfix">
+              <span class="col checkbx">
+                <label class="check-wrap">
+                  <input type="checkbox" name=""><span class="check-label"></span>
+                </label>
+              </span>
+              <span class="col col-7"><a href="#">8417827</a></span>
+              <span class="col col-14">Atlantic Casualty Insurance</span>
+              <span class="col col-6">52</span>
+              <span class="col">Absolute</span>
+              <span class="col">Assigned</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-12">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-8">Normal</span>
+            </li>
+            <li class="clearfix">
+              <span class="col checkbx">
+                <label class="check-wrap">
+                  <input type="checkbox" name=""><span class="check-label"></span>
+                </label>
+              </span>
+              <span class="col col-7"><a href="#">1053330</a></span>
+              <span class="col col-14">ACME Insurance</span>
+              <span class="col col-6">15</span>
+              <span class="col">SJS Truck</span>
+              <span class="col">Review</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-12">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-8">Normal</span>
+            </li>
+            <li class="clearfix">
+              <span class="col checkbx">
+                <label class="check-wrap">
+                  <input type="checkbox" name=""><span class="check-label"></span>
+                </label>
+              </span>
+              <span class="col col-7"><a href="#">1057404</a></span>
+              <span class="col col-14">Western National</span>
+              <span class="col col-6">10</span>
+              <span class="col">Pine Mount</span>
+              <span class="col">Completed</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-12">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-8">Normal</span>
+            </li>
+            <li class="clearfix">
+              <span class="col checkbx">
+                <label class="check-wrap">
+                  <input type="checkbox" name=""><span class="check-label"></span>
+                </label>
+              </span>
+              <span class="col col-7"><a href="#">1189495</a></span>
+              <span class="col col-14">Midwestern</span>
+              <span class="col col-6">65</span>
+              <span class="col">Olaf’s Centre</span>
+              <span class="col">Closed Out</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-12">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-8">Normal</span>
+            </li>
+            <li class="clearfix">
+              <span class="col checkbx">
+                <label class="check-wrap">
+                  <input type="checkbox" name=""><span class="check-label"></span>
+                </label>
+              </span>
+              <span class="col col-7"><a href="#">8582459</a></span>
+              <span class="col col-14">Hartford Ins. Group</span>
+              <span class="col col-6">10</span>
+              <span class="col">ROZZZZP</span>
+              <span class="col">Scheduled</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-12">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-8">Normal</span>
+            </li>
+            <li class="clearfix">
+              <span class="col checkbx">
+                <label class="check-wrap">
+                  <input type="checkbox" name=""><span class="check-label"></span>
+                </label>
+              </span>
+              <span class="col col-7"><a href="#">8417827</a></span>
+              <span class="col col-14">Atlantic Casualty Insurance</span>
+              <span class="col col-6">52</span>
+              <span class="col">Absolute</span>
+              <span class="col">Assigned</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-12">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-8">Normal</span>
+            </li>
+            <li class="clearfix">
+              <span class="col checkbx">
+                <label class="check-wrap">
+                  <input type="checkbox" name=""><span class="check-label"></span>
+                </label>
+              </span>
+              <span class="col col-7"><a href="#">1053330</a></span>
+              <span class="col col-14">ACME Insurance</span>
+              <span class="col col-6">15</span>
+              <span class="col">SJS Truck</span>
+              <span class="col">Review</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-12">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-8">Normal</span>
+            </li>
+            <li class="clearfix">
+              <span class="col checkbx">
+                <label class="check-wrap">
+                  <input type="checkbox" name=""><span class="check-label"></span>
+                </label>
+              </span>
+              <span class="col col-7"><a href="#">1057404</a></span>
+              <span class="col col-14">Western National</span>
+              <span class="col col-6">10</span>
+              <span class="col">Pine Mount</span>
+              <span class="col">Completed</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-12">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-8">Normal</span>
+            </li>
+            <li class="clearfix">
+              <span class="col checkbx">
+                <label class="check-wrap">
+                  <input type="checkbox" name=""><span class="check-label"></span>
+                </label>
+              </span>
+              <span class="col col-7"><a href="#">1189495</a></span>
+              <span class="col col-14">Midwestern</span>
+              <span class="col col-6">65</span>
+              <span class="col">Olaf’s Centre</span>
+              <span class="col"></a>Closed Out</span>
+              <span class="col">OSI Physical Audit</span>
+              <span class="col col-13">799 E Dragram Suite Tucson AZ 85705 New Jersey</span>
+              <span class="col col-12">Exp:9/27/2017 Due:9/27/2017 Sch:12/27/2017 Employee:Lorem Ips</span>
+              <span class="col col-8">Normal</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="clearfix">
+        <ul class="pagination pull-right">
+          <li><a href="#"><i class="icon-exl-previous-to-first pagination-arrow"></i></a></li>
+          <li>
+            <a href="#" aria-label="Previous" class="previous">
+              <i class="icon-exl-previous pagination-arrow"></i>Previous
+            </a>
+          </li>
+          <li class="mid-numbers">1-20 of 100</li>
+          <li>
+            <a href="#" aria-label="Next" class="next">
+              Next<i class="icon-exl-next pagination-arrow pull-right"></i>
+            </a>
+          </li>
+          <li><a href="#"><i class="icon-exl-next-to-end pagination-arrow"></i></a></li>
+        </ul>
+        </div>
+        <button type="button" class="btn btn-secondary">PLAN APPOINTMENTS</button>
+    </div>
+
+    <!-- Footer Portion Start -->
+    <footer>
+      <div class="container-fluid margin-left-none">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 col-md-4 copy-right">&copy; 2017 EXL. All rights reserved.</div>
+          <div class="col-xs-12 col-sm-8 col-md-8 ftr-link">
+            <a href="#">Legal Disclaimer</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="bootstrap/js/npm.js"></script>
+  <script src="assets/js/classie.js"></script>
+  <script src="assets/js/selectFx.js"></script>
+  <script>
+    (function() {
+      [].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {
+        new SelectFx(el);
+      } );
+    })();
+  </script>
+
+</body>
+</html>

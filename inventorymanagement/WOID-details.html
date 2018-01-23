@@ -1,0 +1,677 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>EXL</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+  </head>
+<body>
+  <!-- Header Portion Start -->
+  <header>
+    <div class="container-fluid margin-left-none">
+      <div class="row clearfix">
+        <div class="logo"><img src="assets/img/exl-logo.png" alt="Logo"></div>
+        <div class="inventory-logo col-sm-2"><img src="assets/img/inventory-management.png"></div>
+        <div class="col-xs-12 col-sm-8 pull-right">
+          <h5 class="title visible-xs ordertitle">ORDERS</h5>
+          <div class="userdtl-dropdown clearfix">
+              <div class="user-dtls clearfix">
+                <span class="fa fa-user-circle-o header-usericon visible-xs" aria-hidden="true"></span>
+                <div class="pull-left hidden-xs">
+                  <h6 class="username">Mary Smith</h6>
+                  <span class="user-location">Colombian Ins Grp</span>
+                </div>
+                <i class="drop-arrow fa fa-angle-down hidden-xs" aria-hidden="true"></i>
+              </div>
+              <ul class="dropdowns">
+                <li><a href="#">Dropdown 1</a></li>
+                <li><a href="#">Dropdown 2</a></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+          </div>
+          <div class="notifi-messge-icons">
+            <!-- Search Icon for Mobile View Start -->
+            <div class="icons-group visible-xs">
+              <a href="#" class="link"><i class="icon-exl-search-document icons search"></i></a>
+            </div>
+
+            <div class="icons-group">
+              <a href="#" class="link"><i class="icon-exl-system-flags icons flag"></i></a>
+              <span class="notification-alert">2</span>
+              <!-- Reminder Message Dropdown Start -->
+              <div class="message-dropdown" style="display:none">
+                <span class="arrow-up"></span>
+                <div class="mesg-head clearfix">
+                  <h4 class="col-sm-12 col-md-12 title">System Flags</h4>
+                </div>
+                <div class="mesg-middle">
+                  <ul class="reminder-list">
+                    <li class="clearfix">
+                      <div class="col-sm-11 col-md-11">
+                        <p class="woid-number"><a href="#">WOID 1144332</a></p>
+                        <p class="reminder-descrip">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum printing and typesetting industry. Lorem Ipsum.</p>
+                        <span class="reminder-date">10:27 am</span>
+                      </div>
+                      <div class="col-sm-1 col-md-1 flags-circle"><p class="red"></p></div>
+                    </li>
+                    <li class="clearfix active">
+                      <div class="col-sm-11 col-md-11">
+                        <p class="woid-number"><a href="#">WOID 1144332</a></p>
+                        <p class="reminder-descrip">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum printing and typesetting industry. Lorem Ipsum.</p>
+                        <span class="reminder-date">10:27 am</span>
+                      </div>
+                      <div class="col-sm-1 col-md-1 flags-circle"><p class="red"></p></div>
+                    </li>
+                    <li class="clearfix">
+                      <div class="col-sm-11 col-md-11">
+                        <p class="woid-number"><a href="#">WOID 1144332</a></p>
+                        <p class="reminder-descrip">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum printing and typesetting industry. Lorem Ipsum.</p>
+                        <span class="reminder-date">10:27 am</span>
+                      </div>
+                      <div class="col-sm-1 col-md-1 flags-circle"><p class="green"></p></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="icons-group">
+              <a href="#" class="link"><i class="icon-exl-reminders icons"></i></a>
+              <span class="notification-alert">7</span>
+              <!-- Reminder Message Dropdown Start -->
+              <div class="message-dropdown" style="display:none;">
+                <span class="arrow-up"></span>
+                <div class="mesg-head clearfix">
+                  <h4 class="col-sm-6 col-md-6 title">Reminders</h4>
+                  <span class="col-sm-6 col-md-6 link-read">
+                    <a href="#">View All</a>
+                    <a href="#">Mark all as Read</a>
+                  </span>
+                </div>
+                <div class="mesg-middle">
+                  <ul class="reminder-list">
+                    <h5 class="todayspast-grey">Past Reminder</h5>
+                    <li class="clearfix">
+                      <div class="col-sm-11 col-md-11">
+                        <p class="woid-number"><a href="#">WOID 1144332</a></p>
+                        <p class="from-self">From: Self</p>
+                        <p class="reminder-descrip">Reminder for Appointment Letter. Please send confirmation letter for WOID 1533234 - insured said though last minute they can</p>
+                        <span class="reminder-date">9/18/17, 9AM EDT</span>
+                      </div>
+                      <span class="col-sm-1 col-md-1 reminder-arrow"><i class="fa fa-check-circle-o" aria-hidden="true"></i></span>
+                    </li>
+                    <h5 class="todayspast-grey">Today&apos;s Reminders</h5>
+                    <li class="clearfix">
+                      <div class="col-sm-11 col-md-11">
+                        <p class="woid-number"><a href="#">WOID 1144332</a></p>
+                        <p class="from-self">From: Self</p>
+                        <p class="reminder-descrip">Dr. Appointment 10/2 9AM -3PM EDT</p>
+                        <span class="reminder-date">10/2/17, 9AM EDT</span>
+                      </div>
+                      <span class="col-sm-1 col-md-1 reminder-arrow"><i class="fa fa-check-circle-o" aria-hidden="true"></i></span>
+                    </li>
+                    <li class="clearfix">
+                      <div class="col-sm-11 col-md-11">
+                        <p class="woid-number"><a href="#">WOID 1332200</a></p>
+                        <p class="from-self">From: Scheduler Smith </p>
+                        <p class="reminder-descrip">Follow up with Agent on WOID 1332200 – Agent said to call back tomorrow.</p>
+                        <span class="reminder-date">9/19/17, 9AM EDT</span>
+                      </div>
+                      <span class="col-sm-1 col-md-1 reminder-arrow"><i class="fa fa-check-circle-o" aria-hidden="true"></i></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mesg-footer"><a href="#">+ Create a Reminder</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Left Panel Start -->
+  <div class="leftpanel">
+    <nav class="navigation clearfix " >
+      <ul>
+        <li class="active"><a href="#"><i class="icon-exl-order nav-icons"></i><span class="hidden-xs">Orders</span></a></li>
+        <li><a href="#"><i class="icon-exl-agenda nav-icons agenda"></i><span class="hidden-xs">Agenda</span></a></li>
+        <li class="hidden-xs"><a href="#"><i class="icon-exl-reports nav-icons report icon-left"></i>Reports</span></a></li>
+      </ul>
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse nav-collapse-view clearfix navmobile" id="bs-example-navbar-collapse-1">
+        <ul class="clearfix">
+          <li><a href="#"><i class="icon-exl-reports nav-icons report icon-left"></i>Reports</span></a></li>
+          <li><a href="#"><i class="icon-exl-reports nav-icons report icon-left"></i>Other 1</span></a></li>
+          <li><a href="#"><i class="icon-exl-reports nav-icons report icon-left"></i>Other 2</span></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Main Container Start -->
+  <div class="main-container">
+    <!-- Middle Portion Start -->
+    <div class="container-fluid middle-portion">
+      <div class="row marginbtm clearfix hidden-xs">
+          <!-- Top Bread Crumb Section -->
+          <div class="col-sm-12 col-md-5">
+            <ul class="breadcrumb">
+              <li class="active">Orders</li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-7 breadcrumb-rtportion">
+            <span class="search-input clearfix">
+              <input type="text" class="inputbox" value="Search">
+              <a href="#" class="iconsearch"><i class="fa fa-search" aria-hidden="true"></i></a>
+            </span>
+            <span class="selectbox insure-select-form">
+              <select class="cs-select cs-skin-border">
+                <option>Insured Name</option>
+                <option value="">Select 1</option>
+                <option value="">Select 2</option>
+                <option value="">Select 3</option>
+              </select>
+            </span>
+          </div>
+      </div>
+      <div class="page-title-blue row">
+        <h3 class="title col-sm-6 col-md-6 hidden-xs">ORDERS</h3>
+      </div>
+      <div class="row woid-tabs-greybox">
+        <div class="clearfix">
+          <span class="col-xs-5 col-sm-5 col-md-5 btn-back topmargin"><a href="#"><i class="icon-exl-previous arrow-previous"></i>Back</a></span>
+          <button type="button" class="btn btn-primary launchaudit-btn">LAUNCH AUDIT TOOL</button>
+        </div>
+        <div class="col-sm-12 col-md-12 clearfix">
+          <div class="workid-whitebox clearfix">
+            <a href="#" class="col-xs-2 col-sm-1 col-md-1 arrow-previous"><i class="icon-exl-arrow-left"></i></a>
+            <span class="col-xs-8 col-sm-10 col-md-10 woid-id-number">Work Order ID: 198855774</span>
+            <a href="#" class="col-xs-2 col-sm-1 col-md-1 arrow-next"><i class="icon-exl-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="clearfix">
+         
+          <div class="col-xs-12 col-sm-12 col-md-8">
+            <nav class="navigation clearfix">
+              <div class="navbar-header navcollapse navicon-margin">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <ul class="nav nav-tabs order-subtabs">
+                  <li class="active"><a href="WOID-details.html">General Information</a></li>
+                  <li><a href="WOID-details-progress-report.html">Progress Report</a></li>
+                  <li><a href="WOID-details-documents.html">Documents</a></li>
+                  <li><a href="WOID-details-appointments.html">Appointment</a></li>
+                  <li><a href="WOID-details-records.html">Records</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="col-sm-12 col-md-4 action-links">
+              <div class="special-letter-drop">
+                  <a class="schedule-icon" href="#" data-toggle="modal" data-target="#specialLetterPopup"><i class="icon-exl-scheduled" ></i></a>
+              <span class="selectbox insure-select-form">
+                <select class="cs-select cs-skin-border">
+                  <option>Special Letters</option>
+                  <option value="">Select 1</option>
+                  <option value="">Select 2</option>
+                  <option value="">Select 3</option>
+                </select>
+              </span>
+            </div>
+            <div class="special-letter-drop actions">
+              <select class="cs-select cs-skin-border">
+                <option>Actions</option>
+                <option value="">Select 1</option>
+                <option value="">Select 2</option>
+                <option value="">Select 3</option>
+              </select>
+          </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="clearfix">
+        <div class="policy-dropdown clearfix">
+          <div class="policy-number">Policy No.</div>
+          <span class="selectbox policy-select-form">
+            <select class="cs-select cs-skin-border">
+              <option>WL6234325690</option>
+              <option value="">WL6234325692</option>
+              <option value="">WL6234325694</option>
+              <option value="">WL6234325696</option>
+            </select>
+          </span>
+        </div>
+
+        <!-- Work Order and Policy Inofr Form Start -->
+        <div class="collapse-form">
+          <div class="title-bar clearfix">
+            <div class="title column-50">1. WORK ORDER INFORMATION</div>
+            <div class="title column-50">2. POLICY INFORMATION</div>
+            <!-- <a href="#" class="icon-exl-collapsed icon-collapsed"></a> -->
+            <a href="#" class="icon-exl-expanded icon-collapsed"></a>
+          </div>
+          <!-- Order WOID Details Form Expand and Collapse Section -->
+          <div class="collapse-expand-container clearfix">
+            <div class="column-50 border-devided">
+              <div class="inline-form woid-form">
+                <div class="form-group margin-none clearfix">
+                  <label>Work Order Type </label>
+                  <div class="input-div">
+                    <input type="text" class="form-control" placeholder="Annual" disabled>
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label>Service Level </label>
+                  <div class="input-div">
+                    <input type="text" class="form-control" placeholder="Normal">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label>Product Line</label>
+                  <div class="input-div">
+                    <input type="text" class="form-control" placeholder="OSI Physical Audit">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label>Business Unit</label>
+                  <div class="input-div">
+                    <input type="text" class="form-control" placeholder="Smith Underwriting">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label>BizUnit #</label>
+                  <div class="input-div">
+                    <input type="text" class="form-control" placeholder="1099978">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label>Received Date</label>
+                  <div class="input-div">
+                    <div class="calendar-input">
+                      <input class="form-control date" name="" placeholder="MM/DD/YYYY" type="date" disabled/>
+                      <a href=""class="icon-exl-calendar2 calendar-icon disabled"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label>Due Date</label>
+                  <div class="input-div">
+                    <div class="calendar-input">
+                      <input class="form-control date" name="" placeholder="MM/DD/YYYY" type="date" disabled/>
+                      <a href=""class="icon-exl-calendar2 calendar-icon disabled"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label>Last Program Report</label>
+                  <div class="input-div">
+                    <div class="calendar-input">
+                      <input class="form-control date" name="" placeholder="MM/DD/YYYY" type="date" disabled/>
+                      <a href=""class="icon-exl-calendar2 calendar-icon disabled"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label>Auto Completion date</label>
+                  <div class="input-div">
+                    <div class="calendar-input">
+                      <input class="form-control date" name="" placeholder="MM/DD/YYYY" type="date"/>
+                      <a href=""class="icon-exl-calendar2 calendar-icon"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column-50 border-devided">
+              <div class="inline-form woid-form">
+                <div class="form-group margin-none clearfix">
+                  <label>Policy Number</label>
+                  <div class="input-div">
+                    <input type="text" class="form-control" placeholder="999888777654">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label>Policy Period</label>
+                  <div class="input-div clearfix">
+                    <span class="calendar-input pull-left">
+                      <input class="form-control date" name="" placeholder="MM/DD/YYYY" type="date" disabled/>
+                      <a href=""class="icon-exl-calendar2 calendar-icon disabled"></a>
+                    </span>
+                    <span class="period-to">to </span>
+                    <span class="calendar-input pull-left">
+                      <input class="form-control date" name="" placeholder="MM/DD/YYYY" type="date" disabled/>
+                      <a href=""class="icon-exl-calendar2 calendar-icon disabled"></a>
+                    </span>
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label>Audit Period</label>
+                  <div class="input-div clearfix">
+                    <span class="calendar-input pull-left">
+                      <input class="form-control date" name="" placeholder="MM/DD/YYYY" type="date"/>
+                      <a href=""class="icon-exl-calendar2 calendar-icon"></a>
+                    </span>
+                    <span class="period-to">to </span>
+                    <span class="calendar-input pull-left">
+                      <input class="form-control date" name="" placeholder="MM/DD/YYYY" type="date"/>
+                      <a href=""class="icon-exl-calendar2 calendar-icon"></a>
+                    </span>
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label>Policy Type</label>
+                  <div class="input-div">
+                    <input type="text" class="form-control" placeholder="Workers Compensation">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label>Carrier</label>
+                  <div class="input-div">
+                    <input type="text" class="form-control" placeholder="Acme Insurance Ltd">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Work Order and Policy Inofr Form Start -->
+        <div class="collapse-form">
+          <div class="title-bar clearfix">
+            <div class="title column-33">3. INSURED</div>
+            <div class="title column-33">4. Record location information</div>
+            <div class="title column-33">5. Agent information</div>
+            <!-- <a href="#" class="icon-exl-collapsed icon-collapsed"></a> -->
+            <a href="#" class="icon-exl-expanded icon-collapsed"></a>
+          </div>
+
+          <!-- Order WOID Details Form Expand and Collapse Section -->
+          <div class="collapse-expand-container clearfix">
+            <div class="title column-33 border-devided">
+              <h4 class="title-tablet-mobile visible-xs visible-sm">3. INSURED</h4>
+              <div class="inline-form woid-form">
+                <div class="form-group margin-none clearfix">
+                  <label class="label-big">Insured Name</label>
+                  <div class="input-div small-div">
+                    <input type="text" class="form-control" placeholder="Scenic Motors Inc">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label class="label-big">Other Name</label>
+                  <div class="input-div small-div">
+                    <input type="text" class="form-control" placeholder="">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label class="label-big">Insured Address</label>
+                  <div class="input-div small-div">
+                    <textarea class="textarea">1992 Rockford Street</textarea>
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label class="label-big">City</label>
+                  <div class="input-div small-div">
+                    <input type="text" class="form-control" placeholder="" value="Mount Airy">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label class="label-big">State</label>
+                  <div class="input-div small-div">
+                    <input type="text" class="form-control" placeholder="" value="NC">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label class="label-big">ZIP Code</label>
+                  <div class="input-div small-div">
+                    <input type="text" class="form-control" placeholder="" value="27030">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label class="label-big">Contact Name</label>
+                  <div class="input-div small-div">
+                    <input type="text" class="form-control input-small" placeholder="" value="John">
+                    <input type="text" class="form-control input-small" placeholder="" value="Smith">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label class="label-big">Main Phone</label>
+                  <div class="input-div small-div">
+                    <input type="text" class="form-control" placeholder="" value="813-555-555">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label class="label-big">Fax</label>
+                  <div class="input-div small-div">
+                    <input type="text" class="form-control" placeholder="" value="813-555-555">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label class="label-big">Cell Phone</label>
+                  <div class="input-div small-div">
+                    <input type="text" class="form-control" placeholder="" value="813-555-555">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label class="label-big">Email</label>
+                  <div class="input-div small-div">
+                    <input type="text" class="form-control" placeholder="" value="test@xyz.com">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="title column-33 border-devided">
+              <h4 class="title-tablet-mobile visible-xs visible-sm">4. RECORD LOCATION INFORMATION</h4>
+              <div class="inline-form woid-form">
+                <div class="form-group margin-none clearfix">
+                  <label class="label-big">Name</label>
+                  <div class="input-div small-div">
+                    <input type="text" class="form-control" placeholder="Scenic Motors Inc">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label class="label-big">Other Name</label>
+                  <div class="input-div small-div">
+                    <input type="text" class="form-control" placeholder="">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label class="label-big">Record Address</label>
+                  <div class="input-div small-div">
+                    <textarea class="textarea">1992 Rockford Street</textarea>
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label class="label-big">City</label>
+                  <div class="input-div small-div">
+                    <input type="text" class="form-control" placeholder="" value="Mount Airy">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label class="label-big">State</label>
+                  <div class="input-div small-div">
+                    <input type="text" class="form-control" placeholder="" value="NC">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label class="label-big">ZIP Code</label>
+                  <div class="input-div small-div">
+                    <input type="text" class="form-control" placeholder="" value="27030">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label class="label-big">Contact Name</label>
+                  <div class="input-div small-div">
+                    <input type="text" class="form-control input-small" placeholder="" value="John">
+                    <input type="text" class="form-control input-small" placeholder="" value="Smith">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label class="label-big">Main Phone</label>
+                  <div class="input-div small-div">
+                    <input type="text" class="form-control" placeholder="" value="813-555-555">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label class="label-big">Fax</label>
+                  <div class="input-div small-div">
+                    <input type="text" class="form-control" placeholder="" value="813-555-555">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label class="label-big">Cell Phone</label>
+                  <div class="input-div small-div">
+                    <input type="text" class="form-control" placeholder="" value="813-555-555">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label class="label-big">Email</label>
+                  <div class="input-div small-div">
+                    <input type="text" class="form-control" placeholder="" value="test@xyz.com">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="title column-33 border-devided">
+              <h4 class="title-tablet-mobile visible-xs visible-sm">5. Agent Information</h4>
+              <div class="inline-form woid-form">
+                <div class="form-group margin-none clearfix">
+                  <label class="label-big">Agent Name 1</label>
+                  <div class="input-div small-div">
+                    <input type="text" class="form-control" placeholder="" value="Smith Bros">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label class="label-big">Agent Name 2</label>
+                  <div class="input-div small-div">
+                    <input type="text" class="form-control" placeholder="">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label class="label-big">Agent Address</label>
+                  <div class="input-div small-div">
+                    <textarea class="textarea">PO BOX 1234</textarea>
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label class="label-big">City</label>
+                  <div class="input-div small-div">
+                    <input type="text" class="form-control" placeholder="" value="Tampa">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label class="label-big">State</label>
+                  <div class="input-div small-div">
+                    <input type="text" class="form-control" placeholder="" value="FL">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label class="label-big">ZIP Code</label>
+                  <div class="input-div small-div">
+                    <input type="text" class="form-control" placeholder="">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label class="label-big">Contact Name</label>
+                  <div class="input-div small-div">
+                    <input type="text" class="form-control input-small" placeholder="" value="John">
+                    <!-- <input type="text" class="form-control input-small" placeholder="Smith"> -->
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label class="label-big">Agent Phone</label>
+                  <div class="input-div small-div">
+                    <input type="text" class="form-control" placeholder="" value="813-555-555">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label class="label-big">Fax</label>
+                  <div class="input-div small-div">
+                    <input type="text" class="form-control" placeholder="" value="813-555-555">
+                  </div>
+                </div>
+                <div class="form-group clearfix">
+                  <label class="label-big">Email</label>
+                  <div class="input-div small-div">
+                    <input type="text" class="form-control" placeholder="" value="redacted@olsi.net">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix">
+          <button type="button" class="btn btn-secondary">SAVE &amp; SUBMIT CHANGES</button>
+          <button type="button" class="btn btn-border-pink cancel">CANCEL</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Portion Start -->
+    <footer>
+      <div class="container-fluid margin-left-none">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 col-md-4 copy-right">&copy; 2017 EXL. All rights reserved.</div>
+          <div class="col-xs-12 col-sm-8 col-md-8 ftr-link">
+            <a href="#">Legal Disclaimer</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+   <!-- Modal Special letter -->
+   <div id="specialLetterPopup" class="modal fade popup-style" role="dialog">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="heading">Special Letter Sent</h4>
+              </div>
+              <div class="inline-form">
+                  <p> Special Letter has been sent to WOID 1189485 successfully</p>
+                  <div class="input-wrap savecancel-buttons text-center">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="bootstrap/js/npm.js"></script>
+  <script src="assets/js/classie.js"></script>
+  <script src="assets/js/selectFx.js"></script>
+  <script>
+    (function() {
+      [].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {
+        new SelectFx(el);
+      } );
+    })();
+  </script>
+
+</body>
+</html>
